@@ -5,11 +5,15 @@
 @import 'neat';
 
 $color-white: #fff;
+$color-grey-dark: #333;
 
 // Bourbon Config
 
 
 // Type -----------------------------------------------------------------------
+
+$modular-scale-ratio: $golden;
+// $modular-scale-base: 1em;
 
 html { font-size: 1em; } // 16px
 
@@ -20,29 +24,26 @@ body {
 	font-family: Roboto, sans-serif;
 	font-weight: normal;
 	line-height: 1.45;
-	color: #333;
+	color: $color-grey-dark;
 }
 
-p {margin-bottom: 1.3em;}
+p {margin-bottom: 1em;}
 
-// Augmented fourth - 1.414
 h1, h2, h3, h4 {
-	margin: 1.414em 0 0.5em;
+	margin: 1em 0 0.5em;
 	font-weight: 700;
 	line-height: 1.2;
 }
 
-h1 {
-	font-size: 3.998em;
-}
+h1 { font-size: modular-scale(4); }
 
-h2 {font-size: 2.827em;}
+h2 { font-size: modular-scale(3); }
 
-h3 {font-size: 1.999em;}
+h3 { font-size: modular-scale(2); }
 
-h4 {font-size: 1.414em;}
+h4 { font-size: modular-scale(1); }
 
-small, .font_small {font-size: 0.707em;}
+small { font-size: modular-scale(-1);}
 
 .container {
 	@include outer-container;
