@@ -5,15 +5,20 @@ var browserSync  = require( 'browser-sync' ).create();
 var cache        = require( 'gulp-cached' );
 var sass         = require( 'gulp-sass' );
 var scssLint     = require( 'gulp-scss-lint' );
+var sourcemaps   = require( 'gulp-sourcemaps' );
 
 // CSS pre-processing
 gulp.task( 'sass', function() {
 	return gulp.src( 'assets/styles/*.scss' )
+		.pipe( sourcemaps.init() )
 		.pipe( sass({
 			includePaths: [
 				'bower_components/bourbon/app/assets/stylesheets/',
 				'bower_components/neat/app/assets/stylesheets/'
 			]
+		}) )
+		.pipe( sourcemaps.write( '.', {
+			sourceRoot: 'assets/styles/'
 		}) )
 		.pipe( gulp.dest( 'dist' ) )
 		.pipe( browserSync.stream() );
