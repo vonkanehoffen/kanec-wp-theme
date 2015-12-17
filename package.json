@@ -1,0 +1,18 @@
+{
+  "name": "kanec",
+  "version": "1.0.0",
+  "description": "Kane's portfolio & blog - kanec.co.uk",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kane Clover",
+  "license": "ISC",
+  "devDependencies": {
+    "bourbon-neat": "^1.7.2",
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "lazypipe": "^1.0.1"
+  }
+}

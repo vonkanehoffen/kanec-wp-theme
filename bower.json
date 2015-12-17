@@ -1,0 +1,22 @@
+{
+  "name": "kanec",
+  "description": "Kane's portfolio & blog - kanec.co.uk",
+  "main": "index.html",
+  "authors": [
+    "Kane Clover"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://kanec.co.uk/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2"
+  }
+}
