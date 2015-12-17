@@ -1,0 +1,42 @@
+scss_files: 'assets/styles/**/*.scss'
+
+# Based on https://make.wordpress.org/core/handbook/best-practices/coding-standards/css/
+# With a few diffrences as this is SCSS not plain CSS
+# For instance UrlQuotes. See:
+# https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md#urlquotes
+
+linters:
+  BorderZero:
+    enabled: false
+
+  Indentation:
+    severity: warning
+    width: 1
+    character: tab
+
+  SingleLinePerSelector:
+    enabled: false
+
+  EmptyLineBetweenBlocks:
+    enabled: false
+
+  NameFormat:
+    convention: snake_case
+
+  SelectorFormat:
+    enabled: false
+
+  SelectorDepth:
+    max_depth: 4
+
+  NestingDepth:
+    max_depth: 4
+
+  PropertySortOrder:
+    enabled: false
+
+  LeadingZero:
+    enabled: false
+
+  IdSelector:
+    enabled: false
