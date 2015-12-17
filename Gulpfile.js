@@ -16,7 +16,7 @@ gulp.task( 'sass', function() {
 				'bower_components/bourbon/app/assets/stylesheets/',
 				'bower_components/neat/app/assets/stylesheets/'
 			]
-		}) )
+		}).on('error', sass.logError) )
 		.pipe( sourcemaps.write( '.', {
 			sourceRoot: 'assets/styles/'
 		}) )
