@@ -21,7 +21,7 @@ gulp.task( 'sass', function() {
 			sourceRoot: 'assets/styles/'
 		}) )
 		.pipe( gulp.dest( 'dist' ) )
-		.pipe( browserSync.stream() );
+		.pipe( browserSync.stream({ match: '**/*.css' }) );
 });
 
 // SCSS Lint
