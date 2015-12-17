@@ -21,7 +21,7 @@ linters:
     enabled: false
 
   NameFormat:
-    convention: snake_case
+    convention: hyphenated_lowercase
 
   SelectorFormat:
     enabled: false
