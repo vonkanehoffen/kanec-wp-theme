@@ -1,0 +1,11 @@
+.site-content {
+	@include outer-container;
+}
+.content-area {
+	background:#f00;
+	@include span-columns(8);
+}
+.widget-area {
+	background:#0f0;
+	@include span-columns(4);
+}

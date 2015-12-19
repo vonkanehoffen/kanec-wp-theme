@@ -1,12 +1,14 @@
 // Main stylesheet
 
+@import 'normalize';
 @import 'bourbon';
 @import 'neat';
 
 @import 'variables-site/variables-site';
 @import 'mixins/mixins-master';
 
-@import 'normalize';
+
+@import 'layout/layout';
 @import 'typography/typography';
 @import 'elements/elements';
 @import 'forms/forms';
