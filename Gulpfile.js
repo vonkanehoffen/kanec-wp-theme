@@ -39,7 +39,7 @@ gulp.task( 'build', [ 'scss-lint', 'sass' ] );
 // Watch files and run BrowserSync
 gulp.task( 'watch', ['build'], function() {
 	browserSync.init({
-		server: '.'
+		proxy: 'http://kanec.loc',
 	});
 	gulp.watch( 'assets/styles/*.scss', ['build'] );
 	gulp.watch( '*.html' ).on( 'change', browserSync.reload );
