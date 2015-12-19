@@ -1,83 +1,65 @@
 // Main stylesheet
 
-@import '/bower_components/normalize-css/normalize.css';
-@import 'bourbon';
-@import 'neat';
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
 
-$color-white: #fff;
-$color-grey-dark: #333;
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
 
-// Bourbon Config
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
 
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
 
-// Type ---------------------------------------------------
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
 
-// $modular-scale-ratio: $golden;
-$modular-scale-ratio: $augmented-fourth;
-// $modular-scale-base: 1em;
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
 
-html { font-size: 1em; } // 16px
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
 
-body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background-color: $color-white;
-	font-family: Roboto, sans-serif;
-	font-weight: normal;
-	line-height: 1.45;
-	color: $color-grey-dark;
-}
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
 
-p {margin-bottom: 1em;}
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
 
-h1, h2, h3, h4 {
-	margin: 1em 0 0.5em;
-	font-weight: 700;
-	line-height: 1.2;
-}
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
 
-h1 { font-size: modular-scale(4); }
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
 
-h2 { font-size: modular-scale(3); }
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
 
-h3 { font-size: modular-scale(2); }
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
 
-h4 { font-size: modular-scale(1); }
-
-small { font-size: modular-scale(-1);}
-
-// Grid ---------------------------------------------------
-.container {
-	@include outer-container;
-}
-
-// Splash -------------------------------------------------
-#splash {
-	color: #fff;
-	h1 {
-		font-size: modular-scale(2);
-		font-weight: normal;
-		span {
-			font-weight: 700;
-		}
-	}
-	h2 {
-		font-size: modular-scale(4);
-		font-weight: 100;
-		margin-top: 0;
-	}
-}
-.bgvid { 
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	background: url(polina.jpg) no-repeat;
-	background-size: cover; 
-}
