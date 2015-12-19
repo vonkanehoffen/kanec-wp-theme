@@ -114,7 +114,7 @@ add_action( 'widgets_init', 'kanec_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kanec_scripts() {
-	wp_enqueue_style( 'kanec-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'kanec-style', get_template_directory_uri() . '/dist/main.css', [], false, 'all' );
 
 	wp_enqueue_script( 'kanec-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
