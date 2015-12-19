@@ -1,65 +1,20 @@
 // Main stylesheet
 
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+@import 'bourbon';
+@import 'neat';
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
+@import 'variables-site/variables-site';
+@import 'mixins/mixins-master';
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
-
+@import 'normalize';
+@import 'typography/typography';
+@import 'elements/elements';
+@import 'forms/forms';
+@import 'navigation/navigation';
+@import 'modules/accessibility';
+@import 'modules/alignments';
+@import 'modules/clearings';
+@import 'site/secondary/widgets';
+@import 'site/site';
+@import 'modules/infinite-scroll';
+@import 'media/media';
