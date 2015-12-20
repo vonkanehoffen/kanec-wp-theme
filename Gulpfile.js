@@ -42,5 +42,5 @@ gulp.task( 'watch', ['build'], function() {
 		proxy: 'http://kanec.loc',
 	});
 	gulp.watch( 'assets/styles/**/*.scss', ['build'] );
-	gulp.watch( '*.html' ).on( 'change', browserSync.reload );
+	gulp.watch( '**/*.php' ).on( 'change', browserSync.reload );
 });
