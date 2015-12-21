@@ -2,6 +2,13 @@
 
 @import 'normalize';
 @import 'bourbon';
+@import 'neat-helpers';
+
+$modular-scale-ratio: $augmented-fourth;
+$max-width: em(1170);
+$mobile: new-breakpoint(max-width 37.5em 4);
+$visual-grid: true;
+
 @import 'neat';
 
 @import 'variables-site/variables-site';

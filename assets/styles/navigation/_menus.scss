@@ -1,8 +1,21 @@
+p.site-title {
+	margin: 0;
+	float: left;
+}
+.site-title a {
+	display: block;
+	background: #000;
+	color: #fff;
+	width: 80px;
+	height: 60px;
+	span { display: none; }
+}
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	background: #000;
 
 	ul {
 		display: none;
@@ -59,6 +72,11 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: #fff;
+		padding: 10px 20px;
+		&:hover {
+			background: #555;
+		}
 	}
 
 	.current_page_item > a,
@@ -74,12 +92,19 @@
 	display: block;
 }
 
+// Desktop
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
+	.main-navigation {
+		float:right;
+		width: auto;
+		clear: none;
+	}
 	.main-navigation ul {
 		display: block;
+		float: right;
 	}
 }
 

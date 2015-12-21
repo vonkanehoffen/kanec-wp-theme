@@ -1,9 +1,32 @@
+.container {
+	@include outer-container;
+	.entry-content {
+		@include span-columns(9);
+		@include shift(3);
+		@include pad();
+		@include media( $mobile ) {
+			@include shift(0);
+			@include span-columns(4);
+		}
+	}
+	.entry-footer {
+		@include span-columns(3);
+		@include shift(-12);
+		@include pad();
+		@include media( $mobile ) {
+			@include shift(0);
+			@include span-columns(4);
+		}
+	}
+}
+
 .sticky {
 	display: block;
 }
 
 .hentry {
 	margin: 0 0 1.5em;
+	border-bottom: 3px solid #f00;
 }
 
 .byline,
@@ -19,7 +42,7 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	// margin: 1.5em 0 0;
 }
 
 .page-links {
