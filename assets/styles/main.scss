@@ -8,7 +8,7 @@ $grid-columns: 4 !global;
 $modular-scale-ratio: $augmented-fourth;
 $max-width: em(1170);
 $desktop: new-breakpoint(min-width 37.5em 12);
-$visual-grid: true;
+// $visual-grid: true;
 
 @import 'neat';
 

@@ -1,5 +1,6 @@
 p.site-title {
 	margin: 0;
+	margin-left: $gutter;
 	float: left;
 }
 .site-title a {
@@ -19,6 +20,7 @@ p.site-title {
 	display: block;
 	float: left;
 	width: 100%;
+	margin: 0 $gutter;
 	background: #000;
 
 	ul {
