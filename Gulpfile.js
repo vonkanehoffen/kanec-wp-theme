@@ -3,6 +3,7 @@
 var gulp         = require( 'gulp' );
 var browserSync  = require( 'browser-sync' ).create();
 var cache        = require( 'gulp-cached' );
+var iconfont     = require( 'gulp-iconfont' );
 var sass         = require( 'gulp-sass' );
 var scssLint     = require( 'gulp-scss-lint' );
 var sourcemaps   = require( 'gulp-sourcemaps' );
@@ -31,6 +32,23 @@ gulp.task( 'scss-lint', function() {
 	return gulp.src( 'assets/styles/**/*.scss' )
 		.pipe( cache( 'scssLint' ) )
 		.pipe( scssLint() );
+});
+
+// Icon Font
+var runTimestamp = Math.round(Date.now()/1000);
+gulp.task('iconfont', function(){
+	return gulp.src(['assets/icons/*.svg'])
+		.pipe(iconfont({
+			fontName: 'kanec-icons', // required 
+			appendUnicode: true, // recommended option 
+			formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available 
+			timestamp: runTimestamp, // recommended to get consistent builds when watching files 
+		}))
+			.on('glyphs', function(glyphs, options) {
+				// CSS templating, e.g. 
+				console.log(glyphs, options);
+			})
+		.pipe( gulp.dest('dist') );
 });
 
 // Main build task
