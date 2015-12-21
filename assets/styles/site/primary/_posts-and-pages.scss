@@ -1,21 +1,25 @@
 .container {
 	@include outer-container;
+	.entry-header {
+		@include span-columns(4);
+		padding: 0 $gutter;
+	}
 	.entry-content {
-		@include span-columns(9);
-		@include shift(3);
-		@include pad();
-		@include media( $mobile ) {
-			@include shift(0);
-			@include span-columns(4);
+		@include span-columns(4);
+		padding: 0 $gutter;
+		@include media( $desktop ) {
+			padding-left: 0;
+			@include span-columns(9);
+			@include shift(3);
 		}
 	}
 	.entry-footer {
-		@include span-columns(3);
-		@include shift(-12);
-		@include pad();
-		@include media( $mobile ) {
-			@include shift(0);
-			@include span-columns(4);
+		@include span-columns(4);
+		padding: 0 $gutter;
+		@include media( $desktop ) {
+			padding-right: 0;
+			@include span-columns(3);
+			@include shift(-12);
 		}
 	}
 }
@@ -26,6 +30,7 @@
 
 .hentry {
 	margin: 0 0 1.5em;
+	padding-bottom: $gutter;
 	border-bottom: 3px solid #f00;
 }
 
