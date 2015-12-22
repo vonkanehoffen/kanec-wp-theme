@@ -11,7 +11,7 @@ input,
 select,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
+	font-family: 'Lora', serif;
 	@include font-size(1); // 16px
 	line-height: $font__line-height-body;
 }

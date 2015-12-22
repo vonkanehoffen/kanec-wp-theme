@@ -24,6 +24,11 @@
 	}
 }
 
+.entry-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .sticky {
 	display: block;
 }
@@ -53,4 +58,10 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-meta {
+	.posted-on {
+		display: block;
+	}
 }
