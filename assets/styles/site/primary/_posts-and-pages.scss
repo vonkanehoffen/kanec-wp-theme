@@ -39,14 +39,8 @@
 	border-bottom: 3px solid #f00;
 }
 
-.byline,
 .updated:not(.published){
 	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
 }
 
 .page-content,
