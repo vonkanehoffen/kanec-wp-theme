@@ -22,10 +22,12 @@
 		font-weight: 100;
 		margin-top: 0;
 	}
-	.enter {
-		$pad: 20px;
-		$size: 48px;
 
+	$pad: 20px;
+	$size: 48px;
+	$timing: 1s cubic-bezier(0.4, 0, 1, 1);
+
+	.enter {
 		display: block;
 		position: absolute;
 		left: 50%;
@@ -39,6 +41,26 @@
 			font-size: $size;
 			line-height: 1;
 			padding: $pad;
+			animation: throb-inner $timing infinite;
+		}
+		animation: throb $timing infinite;
+	}
+	@keyframes throb {
+		0% {
+			margin-left: -( $pad + $size / 2);
+			bottom: 60px;
+		}
+		50% {
+			margin-left: -( $pad+6 + $size / 2); 
+			bottom: 60px - 6;
+		}
+	}
+	@keyframes throb-inner {
+		0% {
+			padding: $pad;
+		}
+		50% {
+			padding: $pad+6;
 		}
 	}
 }
