@@ -52,7 +52,7 @@ gulp.task('iconfont', function(){
 });
 
 // Main build task
-gulp.task( 'build', [ 'scss-lint', 'sass' ] );
+gulp.task( 'build', [ 'sass' ] );
 
 // Watch files and run BrowserSync
 gulp.task( 'watch', ['build'], function() {
