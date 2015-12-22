@@ -35,13 +35,10 @@
 			?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php kanec_posted_on(); ?>
-				</div><!-- .entry-meta -->
-			<?php endif; ?>
-			<?php kanec_entry_footer(); ?>
-		</footer><!-- .entry-footer -->
+		<div class="entry-meta">
+			<?php kanec_entry_meta(); ?>
+		</div><!-- .entry-meta -->
+
 	</div>
 </article><!-- #post-## -->
+<div class="divider"></div>

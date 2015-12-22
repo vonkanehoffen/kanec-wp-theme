@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div class="video-bg">
-			<video autoplay loop poster="/assets/images/splash.jpg">
+			<video autoplay loop poster="<?= get_template_directory_uri() ?>/assets/images/splash.jpg">
 				<source src="<?= get_template_directory_uri() ?>/assets/images/splash.webm" type="video/webm">
 				<source src="<?= get_template_directory_uri() ?>/assets/images/splash.mp4" type="video/mp4">
 			</video>

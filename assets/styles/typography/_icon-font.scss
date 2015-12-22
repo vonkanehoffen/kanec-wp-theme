@@ -13,7 +13,7 @@
 
 .icon {
 	display: inline-block;
-	font: normal normal normal 32px/1 'kanec-icons';
+	font: normal normal normal 14px/1 'kanec-icons';
 	font-size: inherit;
 	text-rendering: auto;
 }
@@ -21,4 +21,9 @@
 	&kanec:before { content: '\EA01'; }
 	&search:before { content: '\EA02'; }
 	&nav-down:before { content: '\EA03'; }
+	&folder-open:before { content: '\EA04'; }
+	&tags:before { content: '\EA05'; }
+	&user:before { content: '\EA06'; }
+	&comments:before { content: '\EA07'; }
+	&calendar-o:before { content: '\EA08'; }
 }

@@ -36,7 +36,7 @@ gulp.task( 'scss-lint', function() {
 
 // Icon Font
 var runTimestamp = Math.round(Date.now()/1000);
-gulp.task('iconfont', function(){
+gulp.task('icons', function(){
 	return gulp.src(['assets/icons/*.svg'])
 		.pipe(iconfont({
 			fontName: 'kanec-icons', // required 

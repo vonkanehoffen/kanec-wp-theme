@@ -10,10 +10,15 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
-	font-family: 'Lora', serif;
-	@include font-size(1); // 16px
+	color: #404040;
+	font-family: 'Roboto', sans-serif;
+	// @include font-size(1); // 16px
+	font-size: 18px;
 	line-height: $font__line-height-body;
+}
+
+.entry-content {
+	font-family: 'Lora', serif;
 }
 
 @import "headings";
