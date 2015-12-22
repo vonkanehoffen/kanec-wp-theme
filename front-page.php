@@ -16,12 +16,14 @@ get_header(); ?>
 					<source src="<?= get_template_directory_uri() ?>/assets/images/splash.mp4" type="video/mp4">
 				</video>
 			</div>
-			<div class="container">
-				<section id="splash">
-					<h1><span>Kane Clover</span> / Manchester, UK</h1>
-					<h2>UX Design &amp; Full Stack Web Development</h2>
-				</section>
-			</div>
+			<section class="splash">
+				<div class="inner">
+					<div class="container">
+						<h1><span>Kane Clover</span> / Manchester, UK</h1>
+						<h2>UX Design &amp; Full Stack Web Development</h2>
+					</div>
+				</div>
+			</section>
 			<?php
 			while ( have_posts() ) : the_post();
 
