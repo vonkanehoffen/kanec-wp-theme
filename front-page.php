@@ -9,24 +9,24 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<div class="video-bg">
-				<video autoplay loop poster="/assets/images/splash.jpg">
-					<source src="<?= get_template_directory_uri() ?>/assets/images/splash.webm" type="video/webm">
-					<source src="<?= get_template_directory_uri() ?>/assets/images/splash.mp4" type="video/mp4">
-				</video>
-			</div>
-			<section class="splash">
-				<div class="inner">
-					<div class="container">
-						<h1><span>Kane Clover</span> / Manchester, UK</h1>
-						<h2>UX Design &amp; Full Stack Web Development</h2>
-					</div>
+		<div class="video-bg">
+			<video autoplay loop poster="/assets/images/splash.jpg">
+				<source src="<?= get_template_directory_uri() ?>/assets/images/splash.webm" type="video/webm">
+				<source src="<?= get_template_directory_uri() ?>/assets/images/splash.mp4" type="video/mp4">
+			</video>
+		</div>
+		<section class="splash">
+			<div class="inner">
+				<div class="container">
+					<h1><span>Kane Clover</span> / Manchester, UK</h1>
+					<h2>UX Design &amp; Full Stack Web Development</h2>
 				</div>
-				<a href="#" class="enter">
-					<i class="icon icon-nav-down"></i>
-				</a>
-			</section>
+			</div>
+			<a href="#main" class="enter">
+				<i class="icon icon-nav-down"></i>
+			</a>
+		</section>
+		<main id="main" class="site-main" role="main">
 			<?php
 			while ( have_posts() ) : the_post();
 

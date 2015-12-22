@@ -1,4 +1,6 @@
-// .site-header, .site-content {
-// 	@include outer-container;
-// }
-
+.site-main {
+	margin-top: 60px;
+}
+.home .site-main {
+	margin-top: 0;
+}
