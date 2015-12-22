@@ -23,6 +23,9 @@ get_header(); ?>
 						<h2>UX Design &amp; Full Stack Web Development</h2>
 					</div>
 				</div>
+				<a href="#" class="enter">
+					<i class="icon icon-nav-down"></i>
+				</a>
 			</section>
 			<?php
 			while ( have_posts() ) : the_post();

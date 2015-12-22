@@ -22,6 +22,25 @@
 		font-weight: 100;
 		margin-top: 0;
 	}
+	.enter {
+		$pad: 20px;
+		$size: 48px;
+
+		display: block;
+		position: absolute;
+		left: 50%;
+		bottom: 60px;
+		margin-left: -( $pad + $size / 2);
+		border: 2px solid #fff;
+		border-radius: 50%;
+		text-align: center;
+		.icon {
+			color: #fff;
+			font-size: $size;
+			line-height: 1;
+			padding: $pad;
+		}
+	}
 }
 .video-bg {
 	position: absolute;
