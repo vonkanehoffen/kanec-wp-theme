@@ -98,15 +98,25 @@ add_action( 'after_setup_theme', 'kanec_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function kanec_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'kanec' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
+	$defaults = [
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+		'description'   => '',	
+		];
+	register_sidebar( [
+		'name'          => esc_html__( 'Footer 1', 'kanec' ),
+		'id'            => 'footer-1',
+		] + $defaults );
+	register_sidebar( [
+		'name'          => esc_html__( 'Footer 2', 'kanec' ),
+		'id'            => 'footer-2',
+		] + $defaults );
+	register_sidebar( [
+		'name'          => esc_html__( 'Footer 3', 'kanec' ),
+		'id'            => 'footer-3',
+		] + $defaults );
 }
 add_action( 'widgets_init', 'kanec_widgets_init' );
 

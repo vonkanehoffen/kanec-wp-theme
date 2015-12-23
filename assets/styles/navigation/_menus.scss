@@ -10,10 +10,11 @@ p.site-title {
 }
 .site-title a {
 	display: block;
-	background: #000;
+	background: $color-primary;
 	color: #fff;
 	padding: 10px 20px;
 	text-decoration: none;
+	line-height: 1;
 	&:before {
 		font: normal normal normal 32px/1 'kanec-icons'; 
 		content: '\EA01'; 
@@ -26,8 +27,7 @@ p.site-title {
 	float: left;
 	width: 100%;
 	margin: 0 $gutter;
-	background: #000;
-
+	background: $color-primary;
 	ul {
 		display: none;
 		list-style: none;
@@ -85,6 +85,7 @@ p.site-title {
 		text-decoration: none;
 		color: #fff;
 		padding: 10px 20px;
+		line-height: 32px;
 		&:hover {
 			background: #555;
 		}
@@ -95,6 +96,10 @@ p.site-title {
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
+}
+
+.menu-item-search a {
+
 }
 
 /* Small menu. */

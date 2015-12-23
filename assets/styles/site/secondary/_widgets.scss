@@ -1,8 +1,45 @@
+.site-footer {
+	background: $color-primary;
+	color: #fff;
+	a {
+		color: inherit;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	ul {
+		font-size: modular-scale(-1);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0 $gutter;
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
+
+.footer-widgets {
+	@include outer-container;
+	#footer-1, #footer-2 {
+		@include span-columns(4);
+		@include media( $desktop ) {
+			@include span-columns(3);
+		}
+	}
+	#footer-3 {
+		@include span-columns(4);
+		@include media( $desktop ) {
+			@include span-columns(6);
+		}
+	}
+}
+.site-info {
+	padding: $gutter;
+}
+
