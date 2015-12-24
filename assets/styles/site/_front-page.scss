@@ -97,18 +97,19 @@
 .technologies {
 	@include outer-container;
 	padding: 0 $gutter;
-	background: #00f;
-	dt {
+	.discipline {
 		@include span-columns(2);
-		background:#0f0;
+		&:nth-child(even) {
+			// margin-right: 0;
+		}
 		@include media( $desktop ) {
 			@include span-columns(2);
-			&:nth-child(11) {
+			&:nth-child(6) {
 				margin-right: 0;
 			}
 		}
 	}
-	dd {
+	.info {
 		display: none;
 	}
 }
