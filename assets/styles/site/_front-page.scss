@@ -1,3 +1,5 @@
+// Full page splash screen --------------------------------
+
 .splash {
 	width: 100%;
 	height: 100vh;
@@ -79,5 +81,34 @@
 		min-height: 100vh;
 		background: url(polina.jpg) no-repeat;
 		background-size: cover; 
+	}
+}
+
+// Intro block --------------------------------------------
+
+.intro {
+	background: $color-primary;
+	color: #fff;
+}
+.statement {
+	@include outer-container;
+	padding: $gutter;
+}
+.technologies {
+	@include outer-container;
+	padding: 0 $gutter;
+	background: #00f;
+	dt {
+		@include span-columns(2);
+		background:#0f0;
+		@include media( $desktop ) {
+			@include span-columns(2);
+			&:nth-child(11) {
+				margin-right: 0;
+			}
+		}
+	}
+	dd {
+		display: none;
 	}
 }
