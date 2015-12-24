@@ -42,6 +42,6 @@
 			<?php kanec_entry_meta(); ?>
 		</div><!-- .entry-meta -->
 
-	</div>
+	</div><!-- .container -->
 </article><!-- #post-## -->
 <div class="divider"></div>

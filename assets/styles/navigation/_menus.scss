@@ -2,6 +2,9 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	.admin-bar & {
+		top: 32px; // WP Admin bar / logged in users
+	}
 }
 p.site-title {
 	margin: 0;
