@@ -46,20 +46,20 @@ get_header(); ?>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione numquam, adipisci enim nemo molestiae omnis error maiores, totam labore ullam fugit eligendi dicta. Laudantium minus dolores dignissimos, accusamus aut?</p>
 					</div>
 				</aside>
-				<aside class="discipline">
+<!-- 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/ubuntu.svg" alt=""></dt>
 					<div class="info">
 						<h5>Ubuntu</h5>
 						<p></p>
 					</div>
-				</aside>
-				<aside class="discipline">
+				</aside> -->
+<!-- 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/php.svg" alt=""></dt>
 					<div class="info">
 						<h5>PHP</h5>
 						<p></p>
 					</div>
-				</aside>
+				</aside> -->
 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/sass.svg" alt=""></dt>
 					<div class="info">
@@ -75,21 +75,21 @@ get_header(); ?>
 					</div>
 				</aside>
 				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/new-relic.svg" alt=""></dt>
+					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/new-relic2.svg" alt=""></dt>
 					<div class="info">
 						<h5>NewRelic</h5>
 						<p></p>
 					</div>
 				</aside>
-				<aside class="discipline">
+<!-- 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/cordova.svg" alt=""></dt>
 					<div class="info">
 						<h5>Apache Cordova</h5>
 						<p></p>
 					</div>
-				</aside>
+				</aside> -->
 				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/gitlab.svg" alt=""></dt>
+					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/git.svg" alt=""></dt>
 					<div class="info">
 						<h5>GitLab</h5>
 						<p></p>
