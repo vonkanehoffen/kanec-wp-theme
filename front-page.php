@@ -27,11 +27,18 @@ get_header(); ?>
 			</a>
 		</section>
 		<section class="intro">
-			<div class="statement">
-				<h3>Beauty comes from the inside...<br>
-				<span>...and that's why I'm passionate about coding standards as well as harmonious colour palettes.</span></h3>
+			<div class="container">
+				<div class="slogan">
+					<img src="<?= get_template_directory_uri() ?>/assets/images/beauty.svg" alt="Beauty comes from the inside!">
+				</div>
+				<div class="statement">
+					<h3>...and that's why I'm passionate about coding standards as well as harmonious colour palettes.</h3>
+					<p>When I was growing up, I got taught how to program a computer by one parent and how to draw by the other. These two disciplines have stayed with me throughout my professional career. </p>
+
+					<p>Starting as a Graphic Designer, I’ve become ever more interested in the role systems and technology have in creating beautiful visuals. Whether it’s the Golden Ratio or the latest streaming build system, I’m passionate about using it to create things of beauty. </p>
+				</div>
 			</div>
-			<div class="technologies">
+			<!-- <div class="technologies">
 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/creative-cloud.svg" alt=""></dt>
 					<div class="info">
@@ -46,20 +53,20 @@ get_header(); ?>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione numquam, adipisci enim nemo molestiae omnis error maiores, totam labore ullam fugit eligendi dicta. Laudantium minus dolores dignissimos, accusamus aut?</p>
 					</div>
 				</aside>
-<!-- 				<aside class="discipline">
+				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/ubuntu.svg" alt=""></dt>
 					<div class="info">
 						<h5>Ubuntu</h5>
 						<p></p>
 					</div>
-				</aside> -->
-<!-- 				<aside class="discipline">
+				</aside>
+				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/php.svg" alt=""></dt>
 					<div class="info">
 						<h5>PHP</h5>
 						<p></p>
 					</div>
-				</aside> -->
+				</aside>
 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/sass.svg" alt=""></dt>
 					<div class="info">
@@ -81,13 +88,13 @@ get_header(); ?>
 						<p></p>
 					</div>
 				</aside>
-<!-- 				<aside class="discipline">
+				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/cordova.svg" alt=""></dt>
 					<div class="info">
 						<h5>Apache Cordova</h5>
 						<p></p>
 					</div>
-				</aside> -->
+				</aside>
 				<aside class="discipline">
 					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/git.svg" alt=""></dt>
 					<div class="info">
@@ -95,7 +102,7 @@ get_header(); ?>
 						<p></p>
 					</div>
 				</aside>
-			</div>
+			</div> -->
 		</section>
 		<main id="main" class="site-main" role="main">
 			<?php
