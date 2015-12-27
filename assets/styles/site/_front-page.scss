@@ -79,7 +79,7 @@
 		width: auto;
 		min-width: 100%;
 		min-height: 100vh;
-		background: url(polina.jpg) no-repeat;
+		background: url(../assets/images/splash.jpg) no-repeat;
 		background-size: cover; 
 	}
 }
@@ -119,5 +119,15 @@
 	}
 	.info {
 		display: none;
+	}
+}
+
+.portfolio {
+	@include outer-container;
+	article {
+		@include media( $desktop ) {
+			padding: $gutter;
+			@include span-columns(4);
+		}
 	}
 }

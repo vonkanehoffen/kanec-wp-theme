@@ -104,18 +104,79 @@ get_header(); ?>
 				</aside>
 			</div> -->
 		</section>
+		<section class="portfolio">
+			<h2>Portfolio</h2>
+			<article>
+				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test1.jpg" alt="">
+				<h3>Daisy</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab velit rem quod accusantium recusandae expedita minus, veritatis ex culpa, tempora, autem. Suscipit iusto sit ipsa pariatur in impedit, minus placeat.</p>
+				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
+			</article>
+			<article>
+				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test2.jpg" alt="">
+				<h3>Icelolly</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloremque rerum beatae soluta molestias tempore optio ipsam, dolor delectus perspiciatis possimus ut itaque, voluptatem eos asperiores assumenda labore excepturi iure!</p>
+				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
+			</article>
+			<article>
+				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test3.jpg" alt="">
+				<h3>Anxiety UK</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam debitis repellendus, aliquam blanditiis et libero, quae iste doloribus temporibus quos totam cumque, earum laborum quibusdam eaque repudiandae vel. Doloremque, accusantium.</p>
+				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
+			</article>
+<!-- 			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test1.jpg" />
+						<p class="flex-caption">Adventurer Cheesecake Brownie</p>
+					</li>
+					<li>
+						<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test2.jpg" />
+						<p class="flex-caption">Adventurer Lemon</p>
+					</li>
+					<li>
+						<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test3.jpg" />
+						<p class="flex-caption">Adventurer Donut</p>
+					</li>
+					<li>
+						<img src="http://placehold.it/350x150" />
+						<p class="flex-caption">Adventurer Caramel</p>
+					</li>
+				</ul>
+			</div>			 -->
+		</section>
+		<hr>
+		<section class="portfolio">
+			<h2>Latest Blog Posts</h2>
+			<article>
+				<h3>Golden Ratio Font Sizes</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab velit rem quod accusantium recusandae expedita minus, veritatis ex culpa, tempora, autem. Suscipit iusto sit ipsa pariatur in impedit, minus placeat.</p>
+				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
+			</article>
+			<article>
+				<h3>AfterEffects Strobe Expression</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloremque rerum beatae soluta molestias tempore optio ipsam, dolor delectus perspiciatis possimus ut itaque, voluptatem eos asperiores assumenda labore excepturi iure!</p>
+				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
+			</article>
+			<article>
+				<h3>Anxiety UK</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam debitis repellendus, aliquam blanditiis et libero, quae iste doloribus temporibus quos totam cumque, earum laborum quibusdam eaque repudiandae vel. Doloremque, accusantium.</p>
+				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
+			</article>
+		</section>
+
 		<main id="main" class="site-main" role="main">
 			<?php
-			while ( have_posts() ) : the_post();
+			// while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+			// 	get_template_part( 'template-parts/content', 'page' );
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+			// 	// If comments are open or we have at least one comment, load up the comment template.
+			// 	if ( comments_open() || get_comments_number() ) :
+			// 		comments_template();
+			// 	endif;
 
-			endwhile; // End of the loop.
+			// endwhile; // End of the loop.
 			?>
 
 		</main><!-- #main -->
