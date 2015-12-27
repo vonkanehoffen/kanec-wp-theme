@@ -38,74 +38,11 @@ get_header(); ?>
 					<p>Starting as a Graphic Designer, I’ve become ever more interested in the role systems and technology have in creating beautiful visuals. Whether it’s the Golden Ratio or the latest streaming build system, I’m passionate about using it to create things of beauty. </p>
 				</div>
 			</div>
-			<!-- <div class="technologies">
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/creative-cloud.svg" alt=""></dt>
-					<div class="info">
-						<h5>Adobe Creative Cloud</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis asperiores optio ex dicta non porro voluptas, architecto inventore ab, illo exercitationem dolor, fugit similique eligendi quibusdam hic totam velit a.</p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/wordpress.svg" alt=""></dt>
-					<div class="info">
-						<h5>Wordpress</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ratione numquam, adipisci enim nemo molestiae omnis error maiores, totam labore ullam fugit eligendi dicta. Laudantium minus dolores dignissimos, accusamus aut?</p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/ubuntu.svg" alt=""></dt>
-					<div class="info">
-						<h5>Ubuntu</h5>
-						<p></p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/php.svg" alt=""></dt>
-					<div class="info">
-						<h5>PHP</h5>
-						<p></p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/sass.svg" alt=""></dt>
-					<div class="info">
-						<h5>Sass</h5>
-						<p></p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/node-js.svg" alt=""></dt>
-					<div class="info">
-						<h5>Gulp</h5>
-						<p></p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/new-relic2.svg" alt=""></dt>
-					<div class="info">
-						<h5>NewRelic</h5>
-						<p></p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/cordova.svg" alt=""></dt>
-					<div class="info">
-						<h5>Apache Cordova</h5>
-						<p></p>
-					</div>
-				</aside>
-				<aside class="discipline">
-					<img src="<?= get_template_directory_uri() ?>/assets/images/tech/git.svg" alt=""></dt>
-					<div class="info">
-						<h5>GitLab</h5>
-						<p></p>
-					</div>
-				</aside>
-			</div> -->
 		</section>
 		<section class="portfolio">
-			<h2>Portfolio</h2>
+			<header>
+				<h2><i class="icon icon-briefcase"></i> Portfolio</h2>
+			</header>
 			<article>
 				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test1.jpg" alt="">
 				<h3>Daisy</h3>
@@ -124,45 +61,31 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam debitis repellendus, aliquam blanditiis et libero, quae iste doloribus temporibus quos totam cumque, earum laborum quibusdam eaque repudiandae vel. Doloremque, accusantium.</p>
 				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
 			</article>
-<!-- 			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test1.jpg" />
-						<p class="flex-caption">Adventurer Cheesecake Brownie</p>
-					</li>
-					<li>
-						<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test2.jpg" />
-						<p class="flex-caption">Adventurer Lemon</p>
-					</li>
-					<li>
-						<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test3.jpg" />
-						<p class="flex-caption">Adventurer Donut</p>
-					</li>
-					<li>
-						<img src="http://placehold.it/350x150" />
-						<p class="flex-caption">Adventurer Caramel</p>
-					</li>
-				</ul>
-			</div>			 -->
 		</section>
 		<hr>
 		<section class="portfolio">
-			<h2>Latest Blog Posts</h2>
-			<article>
-				<h3>Golden Ratio Font Sizes</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab velit rem quod accusantium recusandae expedita minus, veritatis ex culpa, tempora, autem. Suscipit iusto sit ipsa pariatur in impedit, minus placeat.</p>
-				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
-			</article>
-			<article>
-				<h3>AfterEffects Strobe Expression</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloremque rerum beatae soluta molestias tempore optio ipsam, dolor delectus perspiciatis possimus ut itaque, voluptatem eos asperiores assumenda labore excepturi iure!</p>
-				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
-			</article>
-			<article>
-				<h3>Anxiety UK</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam debitis repellendus, aliquam blanditiis et libero, quae iste doloribus temporibus quos totam cumque, earum laborum quibusdam eaque repudiandae vel. Doloremque, accusantium.</p>
-				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
-			</article>
+			<header>
+				<h2><i class="icon icon-paper-plane"></i> Latest Blog Posts</h2>
+			</header>
+
+			<?php
+			// Get first 3 blog posts
+			$query = [
+				'no_found_rows'       => true,
+				'post_status'         => 'publish',
+				'post_type'           => 'post',
+				'posts_per_page'      => 2,
+			];
+
+			$blog = new WP_Query( $query );
+
+			while ( $blog->have_posts() ) : $blog->the_post();
+				get_template_part( 'template-parts/content', 'thumb' );
+			endwhile;
+
+			wp_reset_postdata();
+			?>
+
 		</section>
 
 		<main id="main" class="site-main" role="main">

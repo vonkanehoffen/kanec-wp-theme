@@ -124,6 +124,12 @@
 
 .portfolio {
 	@include outer-container;
+	header {
+		padding: 0 $gutter;
+		.icon {
+			color: $color-primary;
+		}
+	}
 	article {
 		@include media( $desktop ) {
 			padding: $gutter;
