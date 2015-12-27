@@ -90,8 +90,9 @@
 	background: $color-primary;
 	color: #fff;
 	.container {
-		@include media( $desktop ) {
-			.slogan, .statement {
+		.slogan, .statement {
+			padding: $gutter;
+			@include media( $desktop ) {
 				@include span-columns(6);
 				padding: $gutter;
 			}
@@ -131,6 +132,7 @@
 		}
 	}
 	article {
+		padding: $gutter;
 		@include media( $desktop ) {
 			padding: $gutter;
 			@include span-columns(4);
