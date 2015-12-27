@@ -39,31 +39,30 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<section class="portfolio">
+		<section class="post-thumbs">
 			<header>
 				<h2><i class="icon icon-briefcase"></i> Portfolio</h2>
 			</header>
-			<article>
-				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test1.jpg" alt="">
-				<h3>Daisy</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab velit rem quod accusantium recusandae expedita minus, veritatis ex culpa, tempora, autem. Suscipit iusto sit ipsa pariatur in impedit, minus placeat.</p>
-				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
-			</article>
-			<article>
-				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test2.jpg" alt="">
-				<h3>Icelolly</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex doloremque rerum beatae soluta molestias tempore optio ipsam, dolor delectus perspiciatis possimus ut itaque, voluptatem eos asperiores assumenda labore excepturi iure!</p>
-				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
-			</article>
-			<article>
-				<img src="<?= get_template_directory_uri() ?>/assets/images/fs-test3.jpg" alt="">
-				<h3>Anxiety UK</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam debitis repellendus, aliquam blanditiis et libero, quae iste doloribus temporibus quos totam cumque, earum laborum quibusdam eaque repudiandae vel. Doloremque, accusantium.</p>
-				<a href="//localhost:3000/2012/03/15/template-more-tag/#more-996" class="more-link">Continue reading <span class="screen-reader-text">“Template: More Tag”</span> <span class="meta-nav">→</span></a>
-			</article>
+			<?php
+			// Get first 3 portfolio items
+			$query = [
+				'no_found_rows'       => true,
+				'post_status'         => 'publish',
+				'post_type'           => 'portfolio',
+				'posts_per_page'      => 3,
+			];
+
+			$portfolio = new WP_Query( $query );
+
+			while ( $portfolio->have_posts() ) : $portfolio->the_post();
+				get_template_part( 'template-parts/content', 'portfolio-excerpt' );
+			endwhile;
+
+			wp_reset_postdata();
+			?>			
 		</section>
 		<hr>
-		<section class="portfolio">
+		<section class="post-thumbs">
 			<header>
 				<h2><i class="icon icon-paper-plane"></i> Latest Blog Posts</h2>
 			</header>
@@ -74,13 +73,14 @@ get_header(); ?>
 				'no_found_rows'       => true,
 				'post_status'         => 'publish',
 				'post_type'           => 'post',
-				'posts_per_page'      => 2,
+				'ignore_sticky_posts' => true,
+				'posts_per_page'      => 3,
 			];
 
 			$blog = new WP_Query( $query );
 
 			while ( $blog->have_posts() ) : $blog->the_post();
-				get_template_part( 'template-parts/content', 'thumb' );
+				get_template_part( 'template-parts/content', 'blog-excerpt' );
 			endwhile;
 
 			wp_reset_postdata();

@@ -1,7 +1,6 @@
 <?php
 /**
- * Template part for displaying posts.
- * Thumbnail view for front-page
+ * Template part for displaying portfolio items on the front page.
  *
  * @package kanec
  */
