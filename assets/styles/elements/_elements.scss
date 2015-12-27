@@ -12,10 +12,11 @@ blockquote, q {
 }
 
 hr {
-	background-color: $color__background-hr;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+	display: block;
+	border: none;
+	margin: $gutter 0;
+	height: $gutter;
+	background: $color-primary url(../assets/images/line-diagonal-mask.png) repeat;
 }
 
 @import "lists";

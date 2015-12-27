@@ -44,4 +44,4 @@
 
 	</div><!-- .container -->
 </article><!-- #post-## -->
-<div class="divider"></div>
+<hr>
