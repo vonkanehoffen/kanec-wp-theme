@@ -9,15 +9,13 @@
 		}
 	}
 	ul {
-		font-size: modular-scale(-1);
+		font-size: ms(-1);
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 }
 .widget {
-	margin: 0 $gutter;
-
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
@@ -25,21 +23,21 @@
 }
 
 .footer-widgets {
-	@include outer-container;
+	@include container;
 	#footer-1, #footer-2 {
-		@include span-columns(4);
-		@include media( $desktop ) {
-			@include span-columns(3);
+		@include span(12);
+		@include susy-breakpoint( $bp-desktop ) {
+			@include span(3);
 		}
 	}
 	#footer-3 {
-		@include span-columns(4);
-		@include media( $desktop ) {
-			@include span-columns(6);
+		@include span(12);
+		@include susy-breakpoint( $bp-desktop ) {
+			@include span(6);
 		}
 	}
 }
 .site-info {
-	padding: $gutter;
+	padding: $gutter-width;
 }
 

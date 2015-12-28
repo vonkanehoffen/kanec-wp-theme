@@ -10,17 +10,17 @@
 		vertical-align: middle;
 	}
 	.container {
-		padding: $gutter;
+		padding: $gutter-width;
 	}
 	h1 {
-		font-size: modular-scale(2);
+		font-size: ms(2);
 		font-weight: normal;
 		span {
 			font-weight: 700;
 		}
 	}
 	h2 {
-		font-size: modular-scale(4);
+		font-size: ms(4);
 		font-weight: 100;
 		margin-top: 0;
 	}
@@ -91,51 +91,48 @@
 	color: #fff;
 	.container {
 		.slogan, .statement {
-			padding: $gutter;
-			@include media( $desktop ) {
-				@include span-columns(6);
-				padding: $gutter;
+			@include susy-breakpoint( $bp-desktop ) {
+				@include span(6);
 			}
 		}
 		.slogan img {
-			padding: $gutter 0;
+			// padding: $gutter-width 0;
 		}
 	}
 }
 
-.technologies {
-	@include outer-container;
-	padding: 0 $gutter;
-	.discipline {
-		@include span-columns(2);
-		&:nth-child(even) {
-			// margin-right: 0;
-		}
-		@include media( $desktop ) {
-			@include span-columns(2);
-			&:nth-child(6) {
-				margin-right: 0;
-			}
-		}
-	}
-	.info {
-		display: none;
-	}
-}
+// .technologies {
+// 	@include outer-container;
+// 	padding: 0 $gutter-width;
+// 	.discipline {
+// 		@include span-columns(2);
+// 		&:nth-child(even) {
+// 			// margin-right: 0;
+// 		}
+// 		@include media( $desktop ) {
+// 			@include span-columns(2);
+// 			&:nth-child(6) {
+// 				margin-right: 0;
+// 			}
+// 		}
+// 	}
+// 	.info {
+// 		display: none;
+// 	}
+// }
 
 .post-thumbs {
-	@include outer-container;
+	@include container;
 	header {
-		padding: 0 $gutter;
+		@include span(12);
 		.icon {
 			color: $color-primary;
 		}
 	}
 	article {
-		padding: $gutter;
-		@include media( $desktop ) {
-			padding: $gutter;
-			@include span-columns(4);
+		@include span(12);
+		@include susy-breakpoint( $bp-desktop ) {
+			@include span(4);
 		}
 	}
 }

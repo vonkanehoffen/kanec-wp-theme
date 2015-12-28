@@ -14,8 +14,8 @@ blockquote, q {
 hr {
 	display: block;
 	border: none;
-	margin: $gutter 0;
-	height: $gutter;
+	margin: $gutter-width 0;
+	height: $gutter-width;
 	background: $color-primary url(../assets/images/line-diagonal-mask.png) repeat;
 }
 

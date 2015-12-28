@@ -1,29 +1,21 @@
 .container {
-	@include outer-container;
+	@include container;
 	.entry-header {
-		@include span-columns(4);
-		padding: 0 $gutter;
+		@include span(12);
 	}
 	.entry-content {
-		@include span-columns(4);
-		padding: 0 $gutter;
-		@include media( $desktop ) {
-			padding-left: 0;
-			@include span-columns(9);
-			@include shift(3);
+		@include span(12);
+		@include susy-breakpoint( $bp-desktop ) {
+			@include span(9 last);
 			.page & {
-				padding-left: $gutter;
-				@include shift(0);
+				@include span(9 first);
 			}
 		}
 	}
 	.entry-meta {
-		@include span-columns(4);
-		padding: 0 $gutter;
-		@include media( $desktop ) {
-			padding-right: 0;
-			@include span-columns(3);
-			@include shift(-12);
+		@include span(12);
+		@include susy-breakpoint( $bp-desktop ) {
+			@include span(3 first);
 		}
 	}
 }
@@ -69,12 +61,12 @@
 .posted-on, .byline, .cat-links, .tags-links, .comments-link {
 	display: block;
 	margin: 10px 0;
-	font-size: modular-scale(-1);
+	font-size: ms(-1);
 }
 
 // Search results
 
 .search .content-area {
-	@include outer-container;
-	padding: 0 $gutter;
+	@include container;
+	// padding: 0 $gutter-width;
 }

@@ -1,8 +1,8 @@
 .comments-area {
-	@include outer-container;
+	@include container;
 }
 .comment-respond {
-	padding: 0 $gutter;
+	// padding: 0 $gutter-width;
 }
 .comment-content a {
 	word-wrap: break-word;

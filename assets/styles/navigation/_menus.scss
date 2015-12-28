@@ -8,7 +8,7 @@
 }
 p.site-title {
 	margin: 0;
-	margin-left: $gutter;
+	margin-left: $gutter-width;
 	float: left;
 }
 .site-title a {
@@ -34,7 +34,7 @@ p.site-title {
 	display: block;
 	float: left;
 	width: 100%;
-	margin: 0 $gutter;
+	margin: 0 $gutter-width;
 	background: $color-primary;
 	ul {
 		display: none;

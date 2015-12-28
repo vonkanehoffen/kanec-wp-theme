@@ -17,6 +17,11 @@
     "tests"
   ],
   "dependencies": {
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "susy": "~2.2.9"
+  },
+  "devDependencies": {
+    "modular-scale": "~2.1.1",
+    "compass-breakpoint": "breakpoint-sass#~2.6.1"
   }
 }
