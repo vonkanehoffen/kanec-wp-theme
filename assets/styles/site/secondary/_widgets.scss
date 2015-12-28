@@ -24,20 +24,14 @@
 
 .footer-widgets {
 	@include container;
-	#footer-1, #footer-2 {
+	.widget-area {
 		@include span(12);
 		@include susy-breakpoint( $bp-desktop ) {
 			@include span(3);
 		}
 	}
-	#footer-3 {
-		@include span(12);
-		@include susy-breakpoint( $bp-desktop ) {
-			@include span(6);
-		}
-	}
 }
 .site-info {
-	padding: $gutter-width;
+	padding: 1em;
 }
 

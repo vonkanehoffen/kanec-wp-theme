@@ -24,6 +24,9 @@
 			<aside id="footer-3" class="widget-area" role="complementary">
 				<?php dynamic_sidebar( 'footer-3' ); ?>
 			</aside><!-- .widget-area -->			
+			<aside id="footer-4" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'footer-4' ); ?>
+			</aside><!-- .widget-area -->
 		</div>
 		<div class="container">
 			<div class="site-info">

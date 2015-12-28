@@ -117,6 +117,10 @@ function kanec_widgets_init() {
 		'name'          => esc_html__( 'Footer 3', 'kanec' ),
 		'id'            => 'footer-3',
 		] + $defaults );
+	register_sidebar( [
+		'name'          => esc_html__( 'Footer 4', 'kanec' ),
+		'id'            => 'footer-4',
+		] + $defaults );
 }
 add_action( 'widgets_init', 'kanec_widgets_init' );
 
