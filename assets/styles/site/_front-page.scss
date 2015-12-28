@@ -10,7 +10,7 @@
 		vertical-align: middle;
 	}
 	.container {
-		padding: $gutter-width;
+		padding: 0 gutter();
 	}
 	h1 {
 		font-size: ms(2);
@@ -91,12 +91,13 @@
 	color: #fff;
 	.container {
 		.slogan, .statement {
+			@include span(12);
 			@include susy-breakpoint( $bp-desktop ) {
 				@include span(6);
 			}
 		}
 		.slogan img {
-			// padding: $gutter-width 0;
+			padding: 1em 0;
 		}
 	}
 }

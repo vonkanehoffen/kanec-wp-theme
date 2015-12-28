@@ -69,4 +69,7 @@
 .search .content-area {
 	@include container;
 	// padding: 0 $gutter-width;
+	.site-main {
+		@include span(12);
+	}
 }
