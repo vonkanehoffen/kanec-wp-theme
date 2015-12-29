@@ -43,8 +43,7 @@ gulp.task('icons', function(){
 			appendUnicode: true, // recommended option 
 			formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available 
 			timestamp: runTimestamp, // recommended to get consistent builds when watching files 
-			normalize: true,
-			fontHeight: 1792
+			descent: 240 // Fix baseline
 		}))
 			.on('glyphs', function(glyphs, options) {
 				// CSS templating, e.g. 
