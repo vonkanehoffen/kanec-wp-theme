@@ -3,6 +3,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: none;
+	outline: 0; // TODO: Accessibility?
 	border-radius: 0;
 	background: $color-primary;
 	// box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -18,6 +19,6 @@ input[type="submit"] {
 
 	&:active,
 	&:focus {
-
+		background: lighten( $color_primary, 10% );
 	}
 }
