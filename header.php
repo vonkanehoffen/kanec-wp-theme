@@ -29,17 +29,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
-			<div class="site-branding">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></p>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
+			<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kanec' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="icon icon-bars"></i></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>

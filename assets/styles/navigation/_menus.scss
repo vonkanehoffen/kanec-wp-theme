@@ -6,33 +6,32 @@
 		top: 32px; // WP Admin bar / logged in users
 	}
 }
-p.site-title {
-	margin: 0;
-	float: left;
-}
-.site-title a {
+.site-title {
 	display: block;
+	float: left;
+	color: #fff;
 	background: $color-primary;
 	color: #fff;
-	padding: 10px 20px;
+	padding: .6em 1em;
 	text-decoration: none;
 	line-height: 1;
 	transition: background-color 0.3s;
 	&:hover {
 		background: lighten( $color-primary, 10% );
 	}
+	&:visited {
+		color: #fff;
+	}
 
 	&:before {
-		font: normal normal normal 32px/1 'kanec-icons'; 
+		font-family: 'kanec-icons'; 
 		content: '\EA01'; 
 	}
 	span { display: none; }
 }
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
 	background: $color-primary;
 	ul {
 		display: none;
@@ -113,6 +112,9 @@ p.site-title {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	color: #fff;
+	font-size: 18px;
+	float: right;
 }
 
 // Desktop
@@ -121,9 +123,9 @@ p.site-title {
 		display: none;
 	}
 	.main-navigation {
-		float:right;
-		width: auto;
-		clear: none;
+		// float:right;
+		// width: auto;
+		// clear: none;
 	}
 	.main-navigation ul {
 		display: block;
