@@ -12,17 +12,18 @@
 	color: #fff;
 	background: $color-primary;
 	color: #fff;
-	padding: .6em 1em;
-	text-decoration: none;
+	font-size: 2em;
 	line-height: 1;
+	padding: .2em 1em;
+	text-decoration: none;
 	transition: background-color 0.3s;
+
 	&:hover {
 		background: lighten( $color-primary, 10% );
 	}
 	&:visited {
 		color: #fff;
 	}
-
 	&:before {
 		font-family: 'kanec-icons'; 
 		content: '\EA01'; 
@@ -89,7 +90,7 @@
 		display: block;
 		text-decoration: none;
 		color: #fff;
-		padding: 10px 20px;
+		padding: .6em 1em;
 		line-height: 32px;
 		transition: background-color 0.3s;
 		&:hover {
