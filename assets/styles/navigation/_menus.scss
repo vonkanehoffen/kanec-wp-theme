@@ -17,22 +17,21 @@
 	float: left;
 	color: #fff;
 	background: $color-primary;
-	color: #fff;
 	font-size: 32px;
 	line-height: 1;
 	padding: 10px 32px;
 	text-decoration: none;
 	transition: background-color 0.3s;
-
+	&:before {
+		font-family: 'kanec-icons'; 
+		content: '\EA01'; 
+	}
 	&:hover {
+		color: #fff;
 		background: lighten( $color-primary, 10% );
 	}
 	&:visited {
 		color: #fff;
-	}
-	&:before {
-		font-family: 'kanec-icons'; 
-		content: '\EA01'; 
 	}
 	span { display: none; }
 }
