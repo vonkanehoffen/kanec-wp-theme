@@ -1,8 +1,13 @@
+// Logo ---------------------------------------------------
+
 .site-header {
 	position: fixed;
 	top: 0;
 	left: gutter();
 	right: gutter();
+	&.toggled {
+		background: $color-primary;		
+	}
 	.admin-bar & {
 		top: 32px; // WP Admin bar / logged in users
 	}
@@ -31,6 +36,9 @@
 	}
 	span { display: none; }
 }
+
+// Main Nav (mobile first) --------------------------------
+
 .main-navigation {
 	display: block;
 	float: right;
@@ -51,6 +59,7 @@
 		color: #fff;
 		padding: 17px 18px;
 		line-height: 1;
+		background: $color-primary;
 		transition: background-color 0.3s;
 		&:hover {
 			background: lighten( $color-primary, 10% );
@@ -64,23 +73,26 @@
 	}
 }
 
-.menu-item-search a {
+// Navicon toggle -----------------------------------------
 
-}
-
-/* Small menu. */
 .menu-toggle {
 	float: right;
 	font-size: 18px;
 	padding: 17px 21px; // To match height of .site-title
 }
-.main-navigation.toggled ul {
-	display: block;
-	color: #fff;
-	float: right;
+.toggled .main-navigation {
+	// width: 100%;
+	// margin-top: -53px;
+	ul {
+		display: block;
+		color: #fff;
+		float: right;
+		clear: both;
+	}
 }
 
-// Desktop
+// Desktop ------------------------------------------------
+
 @include susy-breakpoint( $bp-desktop ) {
 	.menu-toggle {
 		display: none;
