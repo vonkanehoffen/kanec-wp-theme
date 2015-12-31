@@ -30,7 +30,6 @@ gulp.task( 'sass', function() {
 // See https://github.com/brigade/scss-lint
 gulp.task( 'scss-lint', function() {
 	return gulp.src( 'assets/styles/**/*.scss' )
-		.pipe( cache( 'scssLint' ) )
 		.pipe( scssLint() );
 });
 
