@@ -19,14 +19,14 @@ hr {
 	background: $color-primary url(../assets/images/line-diagonal-mask.png) repeat;
 }
 
-@import "lists";
+@import 'lists';
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
 
-@import "tables";
+@import 'tables';
 
 figure {
 	margin: 0;

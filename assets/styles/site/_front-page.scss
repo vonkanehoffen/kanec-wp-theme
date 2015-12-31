@@ -92,7 +92,7 @@
 	.container {
 		.slogan, .statement {
 			@include span(12);
-			@include susy-breakpoint( $bp-desktop ) {
+			@include susy-breakpoint($bp-desktop) {
 				@include span(6);
 			}
 		}
@@ -132,7 +132,7 @@
 	}
 	article {
 		@include span(12);
-		@include susy-breakpoint( $bp-desktop ) {
+		@include susy-breakpoint($bp-desktop) {
 			@include span(4);
 		}
 	}

@@ -1,6 +1,6 @@
 .site-footer {
 	background: $color-primary;
-	color: #fff;
+	color: $color-white;
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -16,7 +16,7 @@
 	}
 }
 .widget {
-	/* Make sure select elements fit in widgets. */
+	// Make sure select elements fit in widgets.
 	select {
 		max-width: 100%;
 	}
@@ -26,7 +26,7 @@
 	@include container;
 	.widget-area {
 		@include span(12);
-		@include susy-breakpoint( $bp-desktop ) {
+		@include susy-breakpoint($bp-desktop) {
 			@include span(3);
 		}
 	}

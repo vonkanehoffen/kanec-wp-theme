@@ -5,7 +5,7 @@
 	}
 	.entry-content {
 		@include span(12);
-		@include susy-breakpoint( $bp-desktop ) {
+		@include susy-breakpoint($bp-desktop) {
 			@include span(9 last);
 			.page & {
 				@include span(9 first);
@@ -14,7 +14,7 @@
 	}
 	.entry-meta {
 		@include span(12);
-		@include susy-breakpoint( $bp-desktop ) {
+		@include susy-breakpoint($bp-desktop) {
 			@include span(3 first);
 		}
 	}
@@ -47,7 +47,7 @@
 		// text-transform: uppercase;
 		font-weight: bold;
 		text-decoration: none;
-		color: #999;
+		color: $color-grey-m;
 	}
 	.icon {
 		color: $color-primary;

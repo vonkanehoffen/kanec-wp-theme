@@ -92,7 +92,7 @@
 
 // Desktop ------------------------------------------------
 
-@include susy-breakpoint( $bp-desktop ) {
+@include susy-breakpoint($bp-desktop) {
 	.menu-toggle {
 		display: none;
 	}

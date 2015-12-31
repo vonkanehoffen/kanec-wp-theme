@@ -16,7 +16,7 @@ address {
 
 pre {
 	background: $color-grey-l;
-	font-family: "Courier 10 Pitch", Courier, monospace;;
+	font-family: 'Courier 10 Pitch', Courier, monospace;
 	@include font-size(0.9375);
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -26,7 +26,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;;
+	font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 	@include font-size(0.9375);
 }
 
@@ -36,7 +36,7 @@ abbr, acronym {
 }
 
 mark, ins {
-	background: $color__background-ins;
+	background: $color-background-ins;
 	text-decoration: none;
 }
 
