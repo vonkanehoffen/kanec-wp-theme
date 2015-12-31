@@ -1,7 +1,7 @@
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
-
+	// scss-lint:disable QualifyingElement
 	img[class*="wp-image-"] {
 		@include center-block;
 	}

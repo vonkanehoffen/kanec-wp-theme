@@ -1,15 +1,17 @@
-/* Text meant only for screen readers. */
+// Text meant only for screen readers.
 .screen-reader-text {
+	// scss-lint:disable ImportantRule
 	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+	position: absolute !important; // scss-lint:ignore
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
 
 	&:focus {
+		// scss-lint:disable ImportantRule
 		background-color: $color-grey-l;
 		border-radius: 3px;
-		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 0 2px 2px $color-black-trans;
 		clip: auto !important;
 		color: $color-text-screen;
 		display: block;
@@ -22,11 +24,11 @@
 		text-decoration: none;
 		top: 5px;
 		width: auto;
-		z-index: 100000; /* Above WP toolbar. */
+		z-index: 100000; // Above WP toolbar.
 	}
 }
 
-/* Do not show the outline on the skip link target. */
+// Do not show the outline on the skip link target.
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }

@@ -17,11 +17,11 @@ linters:
   SingleLinePerSelector:
     enabled: false
 
+  PseudoElement:
+    enabled: false # Even FontAwesome doesn't do ::before
+
   EmptyLineBetweenBlocks:
     enabled: false
-
-  NameFormat:
-    convention: hyphenated_lowercase
 
   SelectorFormat:
     enabled: false

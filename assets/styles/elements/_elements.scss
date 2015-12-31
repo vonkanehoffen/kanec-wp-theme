@@ -1,13 +1,24 @@
 body {
-	background: $color-white; /* Fallback for when there is no custom background color defined. */
+	background: $color-white; // Fallback for when there is no custom background color defined.
 }
 
 blockquote, q {
-	quotes: "" "";
+	background: $color-grey-l;
+	border-left: 10px solid $color-grey-m;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: '\201C' '\201D';
 
-	&:before,
-	&:after {
-		content: "";
+	&:before {
+		color: $color-grey-m;
+		content: open-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+	}
+	p {
+		display: inline;
 	}
 }
 
@@ -16,14 +27,15 @@ hr {
 	border: none;
 	margin: gutter() 0;
 	height: 1em;
-	background: $color-primary url(../assets/images/line-diagonal-mask.png) repeat;
+	width: 100%;
+	background: $color-primary url('../assets/images/line-diagonal-mask.png') repeat;
 }
 
 @import 'lists';
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto; // Make sure images are scaled correctly.
+	max-width: 100%; // Adhere to container width.
 }
 
 @import 'tables';

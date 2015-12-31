@@ -6,7 +6,7 @@
 	left: gutter();
 	right: gutter();
 	&.toggled {
-		background: $color-primary;		
+		background: $color-primary;
 	}
 	.admin-bar & {
 		top: 32px; // WP Admin bar / logged in users
@@ -15,7 +15,7 @@
 .site-title {
 	display: block;
 	float: left;
-	color: #fff;
+	color: $color-white;
 	background: $color-primary;
 	font-size: 32px;
 	line-height: 1;
@@ -23,15 +23,15 @@
 	text-decoration: none;
 	transition: background-color 0.3s;
 	&:before {
-		font-family: 'kanec-icons'; 
-		content: '\EA01'; 
+		font-family: 'kanec-icons';
+		content: '\EA01';
 	}
 	&:hover {
-		color: #fff;
-		background: lighten( $color-primary, 10% );
+		color: $color-white;
+		background: lighten($color-primary, 10%);
 	}
 	&:visited {
-		color: #fff;
+		color: $color-white;
 	}
 	span { display: none; }
 }
@@ -55,13 +55,13 @@
 	a {
 		display: block;
 		text-decoration: none;
-		color: #fff;
+		color: $color-white;
 		padding: 17px 18px;
 		line-height: 1;
 		background: $color-primary;
 		transition: background-color 0.3s;
 		&:hover {
-			background: lighten( $color-primary, 10% );
+			background: lighten($color-primary, 10%);
 		}
 	}
 
@@ -69,6 +69,7 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		background: lighten($color-primary, 10%);
 	}
 }
 
@@ -84,7 +85,7 @@
 	// margin-top: -53px;
 	ul {
 		display: block;
-		color: #fff;
+		color: $color-white;
 		float: right;
 		clear: both;
 	}

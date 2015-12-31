@@ -59,6 +59,6 @@ gulp.task( 'watch', ['build'], function() {
 	browserSync.init({
 		proxy: 'http://kanec.loc',
 	});
-	gulp.watch( 'assets/styles/**/*.scss', ['build'] );
+	gulp.watch( 'assets/styles/**/*.scss', ['build', 'scss-lint'] );
 	gulp.watch( '**/*.php' ).on( 'change', browserSync.reload );
 });
