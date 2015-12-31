@@ -10,11 +10,11 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: $color-text-black;
 	font-family: 'Roboto', sans-serif;
 	// @include font-size(1); // 16px
 	font-size: 18px;
-	line-height: $font__line-height-body;
+	line-height: 1.5;
 }
 
 p, .entry-content {

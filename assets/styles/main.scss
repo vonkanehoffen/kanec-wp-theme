@@ -1,11 +1,13 @@
-// Main stylesheet
+// Main Stylesheet
 
-$color-primary: #DA002E;
+// Vendor Libraries ---------------------------------------
 
 @import 'normalize';
 @import '../../bower_components/modular-scale/stylesheets/modular-scale';
 @import '../../bower_components/compass-breakpoint/stylesheets/breakpoint';
 @import '../../bower_components/susy/sass/susy';
+
+// Config -------------------------------------------------
 
 // Modular scale
 $ms-base: 1em;
@@ -19,11 +21,23 @@ $susy: (
 	gutter-position: inside
 	);
 
+// Breakpoints
 $bp-desktop: 768px;
 
-@import 'variables-site/variables-site'; // That is mostly unused. 
-@import 'mixins/mixins-master';
+// Variables ----------------------------------------------
 
+$color-primary: #da002e;
+$color-white: #fff;
+$color-grey-l: #eee;
+$color-grey-m: #ccc;
+$color-grey-d: #666;
+$color-text-black: #404040;
+$color__background-ins: #fff9c0; // Legacy
+$color__text-screen: #21759b; // Legacy
+
+// Site ---------------------------------------------------
+
+@import 'mixins/mixins-master';
 
 @import 'layout/layout';
 @import 'typography/typography';

@@ -15,10 +15,10 @@ address {
 }
 
 pre {
-	background: $color__background-pre;
-	font-family: $font__pre;
+	background: $color-grey-l;
+	font-family: "Courier 10 Pitch", Courier, monospace;;
 	@include font-size(0.9375);
-	line-height: $font__line-height-pre;
+	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
@@ -26,12 +26,12 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: $font__code;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;;
 	@include font-size(0.9375);
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $color__border-abbr;
+	border-bottom: 1px dotted $color-grey-d;
 	cursor: help;
 }
 
