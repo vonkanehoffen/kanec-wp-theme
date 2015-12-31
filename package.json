@@ -1,7 +1,11 @@
 {
   "name": "kanec",
   "version": "1.0.0",
-  "description": "Kane's portfolio & blog - kanec.co.uk",
+  "description": "Kane's Portfolio & Blog Wordpress Theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vonkanehoffen/kanec-wp-theme.git"
+  },
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,14 +13,12 @@
   "author": "Kane Clover",
   "license": "ISC",
   "devDependencies": {
-    "bourbon-neat": "^1.7.2",
     "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
     "gulp-cached": "^1.1.0",
     "gulp-iconfont": "^5.0.1",
     "gulp-sass": "^2.1.1",
     "gulp-scss-lint": "^0.3.8",
-    "gulp-sourcemaps": "^1.6.0",
-    "lazypipe": "^1.0.1"
+    "gulp-sourcemaps": "^1.6.0"
   }
 }

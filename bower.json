@@ -1,13 +1,17 @@
 {
   "name": "kanec",
-  "description": "Kane's portfolio & blog - kanec.co.uk",
-  "main": "index.html",
+  "description": "Kane's Portfolio & Blog Wordpress Theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vonkanehoffen/kanec-wp-theme.git"
+  },
+  "main": "index.php",
   "authors": [
     "Kane Clover"
   ],
   "license": "ISC",
   "moduleType": [],
-  "homepage": "https://kanec.co.uk/",
+  "homepage": "https://kanec.uk/",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,12 +20,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "neat": "~1.7.2",
-    "susy": "~2.2.9"
-  },
+  "dependencies": {},
   "devDependencies": {
     "modular-scale": "~2.1.1",
-    "compass-breakpoint": "breakpoint-sass#~2.6.1"
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "susy": "~2.2.9"
   }
 }
