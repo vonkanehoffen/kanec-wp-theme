@@ -19,7 +19,7 @@ get_header(); ?>
 			<div class="inner">
 				<div class="container">
 					<h1><span>Kane Clover</span> / Manchester, UK</h1>
-					<h2>Web Designer &amp; Full Stack Developer</h2>
+					<h2><?= get_bloginfo( 'description', 'display' ); ?></h2>
 				</div>
 			</div>
 			<a href="#main" class="enter">
