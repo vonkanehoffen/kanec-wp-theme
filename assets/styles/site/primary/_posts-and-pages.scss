@@ -65,11 +65,11 @@
 	font-size: ms(-1);
 }
 
-// Archives, search, 404
+// Header for archives, search, 404
 .page-header {
-	border-bottom: 18px solid $color-primary;
+	border-bottom: 0.5em solid $color-primary;
 }
-.page-title, .taxonomy-description {
+.page-title, .taxonomy-description, .page-content {
 	@include span(12);
 }
 
