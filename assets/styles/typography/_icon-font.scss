@@ -11,7 +11,7 @@
 	font-style: normal;
 }
 
-.icon {
+.icon:before {
 	display: inline-block;
 	font: normal normal normal 14px/1 'kanec-icons';
 	font-size: inherit;
@@ -29,6 +29,8 @@
 	&briefcase:before { content: '\EA09'; }
 	&paper-plane:before { content: '\EA0A'; }
 	&bars:before { content: '\EA0B'; }
+	&arrow-left:before { content: '\EA0C'; }
+	&arrow-right:before { content: '\EA0D'; }
 
 	// section.intro
 	&creative-cloud:before { content: '\EA09'; }
