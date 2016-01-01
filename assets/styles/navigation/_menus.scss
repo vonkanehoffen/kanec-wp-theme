@@ -102,23 +102,49 @@
 	}
 }
 
+.navigation {
+	@include container;
+	.nav-links {
+		@include span(12);
+		margin-bottom: 1em;
+	}
+}
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
+		// margin: 0 0 1.5em;
+		// overflow: hidden;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.icon {
+		background: $color-primary;
+		color: $color-white;
+		padding: 1em;
+		margin: 1em 0;
+		border-radius: 50%;
 	}
 
 	.nav-previous {
 		float: left;
 		width: 50%;
+		.icon {
+			margin-right: 1em;
+		}
 	}
 
 	.nav-next {
 		float: right;
 		text-align: right;
 		width: 50%;
+		.icon	{
+			margin-left: 1em;
+		}
 	}
+
 }
