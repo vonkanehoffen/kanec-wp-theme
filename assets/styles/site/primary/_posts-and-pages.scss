@@ -65,12 +65,30 @@
 	font-size: ms(-1);
 }
 
+// Archives, search, 404
+.page-header {
+	border-bottom: 18px solid $color-primary;
+}
+.page-title, .taxonomy-description {
+	@include span(12);
+}
+
 // Search results
 
-.search .content-area {
-	@include container;
-	// padding: 0 $gutter-width;
-	.site-main {
-		@include span(12);
-	}
-}
+// .no-results {
+// 	@include container;
+// 	.page-content {
+// 		@include span(12);
+// 	}
+// }
+// .entry-summary {
+// 	@include span(12);
+// }
+
+// .search .content-area {
+// 	@include container;
+// 	// padding: 0 $gutter-width;
+// 	.site-main {
+// 		@include span(12);
+// 	}
+// }
