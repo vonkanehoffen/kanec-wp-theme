@@ -3,8 +3,7 @@
 .site-header {
 	position: fixed;
 	top: 0;
-	left: gutter();
-	right: gutter();
+	width: 100%;
 	&.toggled {
 		background: $color-primary;
 	}
@@ -20,6 +19,7 @@
 	font-size: 32px;
 	line-height: 1;
 	padding: 10px 32px;
+	margin-left: gutter();
 	text-decoration: none;
 	transition: background-color 0.3s;
 	&:before {
@@ -41,6 +41,7 @@
 .main-navigation {
 	display: block;
 	float: right;
+	margin-right: gutter();
 	background: $color-primary;
 	ul {
 		display: none;
