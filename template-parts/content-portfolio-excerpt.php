@@ -15,7 +15,7 @@
 	
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
-		<a href="<?php the_permalink(); ?>" class="more-link">Continue reading <span class="meta-nav">→</span></a>
+		<a href="<?php the_permalink(); ?>" class="more-link">Read <i class="icon icon-arrow-right"></i></a>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
