@@ -8,14 +8,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if( has_post_thumbnail() ) : ?>
-		<?php the_post_thumbnail( 'medium' ); ?>
-	<?php endif; ?>
-	<?php the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
-	
-	<div class="entry-content">
-		<?php the_excerpt(); ?>
-		<a href="<?php the_permalink(); ?>" class="more-link">Read <i class="icon icon-arrow-right"></i></a>
-	</div><!-- .entry-content -->
+	<div class="portfolio-excerpt" style="background-image: url(<?= kanec_get_post_thumbnail_url() ?>);">
+		<div class="entry-content">
+			<?php the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' ); ?>
+			<?php the_excerpt(); ?>
+			<a href="<?php the_permalink(); ?>" class="more-link">Read <i class="icon icon-arrow-right"></i></a>
+		</div><!-- .entry-content -->
+	</div>
+
 
 </article><!-- #post-## -->

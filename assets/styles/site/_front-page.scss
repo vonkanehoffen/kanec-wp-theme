@@ -30,39 +30,14 @@
 	$timing: 1s cubic-bezier(0.4, 0, 1, 1);
 
 	.enter {
-		display: block;
-		position: absolute;
-		left: 50%;
-		bottom: 60px;
-		margin-left: -($pad + $size / 2);
+		display: inline-block;
+		color: $color-white;
 		border: 2px solid $color-white;
-		border-radius: 50%;
-		text-align: center;
-		animation: throb $timing infinite;
-		.icon {
-			color: $color-white;
-			font-size: $size;
-			line-height: 1;
-			padding: $pad;
-			animation: throb-inner $timing infinite;
-		}
-	}
-	@keyframes throb {
-		0% {
-			margin-left: -($pad + $size / 2);
-			bottom: 60px;
-		}
-		50% {
-			margin-left: -($pad + 6 + $size / 2);
-			bottom: 60px - 6;
-		}
-	}
-	@keyframes throb-inner {
-		0% {
-			padding: $pad;
-		}
-		50% {
-			padding: $pad + 6;
+		border-radius: 8px;
+		padding: 8px 60px;
+		font-size: 32px;
+		&:hover {
+			background: rgba( $color-white, 0.2 );
 		}
 	}
 }
@@ -141,5 +116,21 @@
 	}
 	.more-link {
 		float: right;
+	}
+}
+
+.portfolio-excerpt {
+	display: flex;
+	align-items: flex-end;
+	min-height: 400px;
+	background-size: cover;
+	.entry-content {
+		width: 100%;
+		padding: 0.5em;
+		color: $color-white;
+		background: $color-black-trans;
+	}
+	.more-link {
+		margin: 0 -0.5em -0.5em 0;
 	}
 }

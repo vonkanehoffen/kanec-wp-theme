@@ -20,11 +20,12 @@ get_header(); ?>
 				<div class="container">
 					<h1><span>Kane Clover</span> / Manchester, UK</h1>
 					<h2><?= get_bloginfo( 'description', 'display' ); ?></h2>
+					<a href="#main" class="enter">
+						<i class="icon icon-arrow-right"></i>
+					</a>
 				</div>
 			</div>
-			<a href="#main" class="enter">
-				<i class="icon icon-nav-down"></i>
-			</a>
+			
 		</section>
 		<main id="main" class="site-main" role="main">
 			<section class="intro">
@@ -67,7 +68,7 @@ get_header(); ?>
 			<hr>
 			<section class="post-thumbs">
 				<header>
-					<h2><i class="icon icon-paper-plane"></i> Latest Blog Posts</h2>
+					<h2><i class="icon icon-paper-plane"></i> Thoughts</h2>
 				</header>
 				<?php
 
