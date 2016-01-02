@@ -68,9 +68,10 @@
 
 // Header for archives, search, 404
 .page-header {
-	background: #92102A;
+	// background: #92102A;
+	color: $color-primary;
 	padding-top: 60px;
-	border-bottom: 0.5em solid $color-primary;
+	border-bottom: 2px dotted $color-primary;
 }
 .page-title, .taxonomy-description, .page-content {
 	@include span(12);
