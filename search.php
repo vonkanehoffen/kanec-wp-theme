@@ -34,7 +34,10 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation([
+				'prev_text'          => '<i class="icon icon-arrow-left"></i> Older posts',
+				'next_text'          => 'Newer posts <i class="icon icon-arrow-right"></i>',
+				]);
 
 		else :
 
