@@ -11,13 +11,13 @@ input,
 select,
 textarea {
 	color: $color-text-black;
-	font-family: 'Roboto', sans-serif;
+	font-family: $font-sans;
 	font-size: 18px;
 	line-height: 1.5;
 }
 
 p, .entry-content {
-	font-family: 'Lora', serif;
+	font-family: $font-serif;
 }
 
 @import 'headings';
