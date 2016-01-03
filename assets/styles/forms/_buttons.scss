@@ -5,7 +5,7 @@ input[type="reset"],
 input[type="submit"] {
 	border: none;
 	outline: 0; // TODO: Accessibility?
-	border-radius: 0;
+	border-radius: 5px;
 	background: $color-primary;
 	color: $white;
 	line-height: 1;
