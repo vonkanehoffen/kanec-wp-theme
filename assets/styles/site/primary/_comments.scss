@@ -1,6 +1,29 @@
 .comments-area {
 	@include container;
 }
+	.comments-title {
+		@include span(12);
+		border-top: 2px solid $color-grey-l;
+		list-style: none;
+		padding-top: gutter() * 2;
+	}
+	.comment-list {
+		@include span(12);
+		margin: 0;
+		list-style: none;
+		padding-top: gutter();
+		.children {
+			list-style: none;
+			margin: 0;
+			padding-top: gutter();
+		}
+	}
+	.comment-respond {
+		@include span(12);
+	}
+	.no-comments {
+		@include span(12);
+	}
 .comment-respond {
 	// padding: 0 $gutter-width;
 }
@@ -9,4 +32,46 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+.comment-meta a {
+	text-decoration: none;
+}
+.comment-author {
+	img {
+		float: left;
+		padding-right: gutter();
+	}
+}
+.site .avatar {
+	border-radius: 50%;
+}
+.says {
+	@extend .screen-reader-text;
+}
+.comment-metadata {
+	font-size: ms(-1);
+	a {
+		color: $color-grey-m;
+	}
+}
+.comment, .pingback {
+	border-top: 1px solid $color-grey-l;
+	padding-top: gutter();
+	padding-bottom: gutter();
+}
+.comment-reply-link {
+	display: inline-block;
+	font-size: ms(-1);
+	padding: .5em 1em;
+	// margin-bottom: gutter();
+	text-decoration: none;
+	border-radius: 5px;
+	color: $white;
+	background: $color-primary;
+	transition: background-color 0.3s;
+	&:hover {
+		color: $white;
+		background: lighten($color-primary, 10%);
+	}
 }

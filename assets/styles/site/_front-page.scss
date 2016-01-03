@@ -101,9 +101,6 @@
 	@include container;
 	header {
 		@include span(12);
-		.icon {
-			color: $color-primary;
-		}
 	}
 	article {
 		@include span(12);
