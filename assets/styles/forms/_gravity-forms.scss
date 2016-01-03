@@ -1,0 +1,66 @@
+.validation_error {
+	border: 1px solid $color-error;
+	border-radius: 5px;
+	padding: gutter();
+	margin: gutter() 0;
+	font-family: $font-sans;
+	font-weight: 700;
+	color: $color-primary;
+	&:before {
+		display: inline-block;
+		margin-right: gutter();
+		font: normal normal normal 18px/1 'kanec-icons';
+		text-rendering: auto;
+		content: '\EA0E';
+	}
+}
+.validation_message {
+	font-family: $font-sans;
+	font-weight: 700;
+	margin: gutter() 0;
+}
+.gfield_error {
+	input, textarea {
+		color: $color-error;
+		border-color: $color-error;
+		background: lighten($color-error, 55%);
+	}
+	label, .gfield_description {
+		color: $color-error;
+	}
+}
+.gform_fields {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.gfield {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	.small {
+		width: 30%;
+	}
+	.medium {
+		width: 50%;
+	}
+	.large {
+		width: 97%;
+	}
+	textarea.textarea {
+		width: 97%;
+	}
+}
+.gfield_description {
+	margin: gutter() 0;
+}
+.gfield_checkbox, .gfield_radio {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	input {
+		margin-right: gutter();
+	}
+	label {
+		display: inline;
+	}
+}

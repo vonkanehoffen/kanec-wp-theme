@@ -38,6 +38,8 @@ $color-black-trans: rgba(0, 0, 0, 0.6);
 $color-background-ins: #fff9c0; // Legacy
 $color-text-screen: #21759b; // Legacy
 
+$color-error: $color-primary;
+
 // Site ---------------------------------------------------
 
 @import 'mixins/mixins-master';
