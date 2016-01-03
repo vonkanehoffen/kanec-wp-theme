@@ -5,6 +5,9 @@
 	height: 100vh;
 	color: $white;
 	display: table;
+	.admin-bar & {
+		margin-top: -32px; // WP Admin bar / logged in users
+	}
 	.inner {
 		display: table-cell;
 		vertical-align: middle;
