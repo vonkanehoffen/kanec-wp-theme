@@ -101,6 +101,19 @@
 	@include container;
 	header {
 		@include span(12);
+		h2 {
+			float: left;
+		}
+	}
+	.see-all {
+		display: inline-block;
+		float: right;
+		font-weight: bold;
+		text-decoration: none;
+		margin-top: 51px; // rough match for h2 margin
+		padding: gutter() gutter() * 2;
+		border: 1px solid $color-primary;
+		border-radius: 5px;
 	}
 	article {
 		@include span(12);
@@ -114,7 +127,10 @@
 	.more-link {
 		float: right;
 	}
+
 }
+
+
 
 .portfolio-excerpt {
 	display: flex;

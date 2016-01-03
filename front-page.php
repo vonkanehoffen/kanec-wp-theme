@@ -41,57 +41,69 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
-			<section class="post-thumbs">
-				<header>
-					<h2><i class="icon icon-briefcase"></i> Portfolio</h2>
-				</header>
-				<?php
+			<?php
 				
-				// Get first 3 portfolio items ----------------------------------------
+			// Get first 3 portfolio items ----------------------------------------
 
-				$query = [
-					'no_found_rows'       => true,
-					'post_status'         => 'publish',
-					'post_type'           => 'portfolio',
-					'posts_per_page'      => 3,
-				];
+			$query = [
+				'no_found_rows'       => true,
+				'post_status'         => 'publish',
+				'post_type'           => 'portfolio',
+				'posts_per_page'      => 3,
+			];
 
-				$portfolio = new WP_Query( $query );
+			$portfolio = new WP_Query( $query ); 
 
-				while ( $portfolio->have_posts() ) : $portfolio->the_post();
-					get_template_part( 'template-parts/content', 'portfolio-excerpt' );
-				endwhile;
+			if( $portfolio->have_posts() ) : ?>
 
-				wp_reset_postdata();
-				?>			
-			</section>
-			<hr>
-			<section class="post-thumbs">
-				<header>
-					<h2><i class="icon icon-paper-plane"></i> Thoughts</h2>
-				</header>
-				<?php
+				<section class="post-thumbs">
+					<header>
+						<h2><i class="icon icon-briefcase"></i> Portfolio</h2>
+					</header>
+					<?php
+					while ( $portfolio->have_posts() ) : $portfolio->the_post();
+						get_template_part( 'template-parts/content', 'portfolio-excerpt' );
+					endwhile;
+					?>
+				</section>
+				<hr>
 
-				// Get first 3 blog posts ---------------------------------------------
+			<?php endif; // have_posts
+			wp_reset_postdata();
 
-				$query = [
-					'no_found_rows'       => true,
-					'post_status'         => 'publish',
-					'post_type'           => 'post',
-					'ignore_sticky_posts' => true,
-					'posts_per_page'      => 3,
-				];
+			// Get first 3 blog posts ---------------------------------------------
 
-				$blog = new WP_Query( $query );
+			$query = [
+				'no_found_rows'       => true,
+				'post_status'         => 'publish',
+				'post_type'           => 'post',
+				'ignore_sticky_posts' => true,
+				'posts_per_page'      => 3,
+			];
 
-				while ( $blog->have_posts() ) : $blog->the_post();
-					get_template_part( 'template-parts/content', 'blog-excerpt' );
-				endwhile;
+			$blog = new WP_Query( $query );
 
-				wp_reset_postdata();
-				?>
+			if( $blog->have_posts() ) : ?>
 
-			</section>
+				<section class="post-thumbs">
+					<header>
+						<h2><i class="icon icon-paper-plane"></i> Blog</h2>
+						<a href="<?= get_permalink( get_option('page_for_posts') ); ?>" class="see-all">
+							See all posts
+							<!-- <i class="icon icon-arrow-right"></i> -->
+						</a>
+					</header>
+					
+					<?php
+					while ( $blog->have_posts() ) : $blog->the_post();
+						get_template_part( 'template-parts/content', 'blog-excerpt' );
+					endwhile;
+					?>
+				</section>
+			
+			<?php endif; // have_posts
+			wp_reset_postdata(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
