@@ -3,7 +3,7 @@
 .splash {
 	width: 100%;
 	height: 100vh;
-	color: $color-white;
+	color: $white;
 	display: table;
 	.inner {
 		display: table-cell;
@@ -31,13 +31,13 @@
 
 	.enter {
 		display: inline-block;
-		color: $color-white;
-		border: 2px solid $color-white;
+		color: $white;
+		border: 2px solid $white;
 		border-radius: 8px;
 		padding: 8px 60px;
 		font-size: 32px;
 		&:hover {
-			background: rgba( $color-white, 0.2 );
+			background: rgba( $white, 0.2 );
 		}
 	}
 }
@@ -63,7 +63,7 @@
 
 .intro {
 	background: $color-primary;
-	color: $color-white;
+	color: $white;
 	.container {
 		.slogan, .statement {
 			@include span(12);
@@ -127,7 +127,7 @@
 	.entry-content {
 		width: 100%;
 		padding: 0.5em;
-		color: $color-white;
+		color: $white;
 		background: $color-black-trans;
 	}
 	.more-link {

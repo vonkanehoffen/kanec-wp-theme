@@ -14,7 +14,7 @@
 .site-title {
 	display: block;
 	float: left;
-	color: $color-white;
+	color: $white;
 	background: $color-primary;
 	font-size: 32px;
 	line-height: 1;
@@ -27,11 +27,11 @@
 		content: '\EA01';
 	}
 	&:hover {
-		color: $color-white;
+		color: $white;
 		background: lighten($color-primary, 10%);
 	}
 	&:visited {
-		color: $color-white;
+		color: $white;
 	}
 	span { display: none; }
 }
@@ -56,7 +56,7 @@
 	a {
 		display: block;
 		text-decoration: none;
-		color: $color-white;
+		color: $white;
 		padding: 17px 18px;
 		line-height: 1;
 		background: $color-primary;
@@ -86,7 +86,7 @@
 	// margin-top: -53px;
 	ul {
 		display: block;
-		color: $color-white;
+		color: $white;
 		float: right;
 		clear: both;
 	}
@@ -125,7 +125,7 @@
 
 	.icon {
 		background: $color-primary;
-		color: $color-white;
+		color: $white;
 		padding: 1em;
 		margin: 1em 0;
 		border-radius: 50%;

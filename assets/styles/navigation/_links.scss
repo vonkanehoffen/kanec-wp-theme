@@ -21,17 +21,17 @@ a {
 .more-link {
 	display: inline-block;
 	background: $color-primary;
-	color: $color-white;
+	color: $white;
 	padding: 10px 20px;
 	text-decoration: none;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	transition: background-color 0.3s;
 	&:hover, &:active {
-		color: $color-white;
+		color: $white;
 		background: lighten($color-primary, 10%);
 	}
 	&:visited {
-		color: $color-white;
+		color: $white;
 	}
 }
