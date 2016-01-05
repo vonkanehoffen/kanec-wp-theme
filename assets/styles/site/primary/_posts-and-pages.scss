@@ -25,6 +25,9 @@
 	color: inherit;
 	word-wrap: break-word;
 }
+.entry-content {
+	word-wrap: break-word; // Fix long URLs breaking excerpts
+}
 
 .sticky {
 	display: block;
