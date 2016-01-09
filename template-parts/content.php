@@ -13,6 +13,13 @@
 	<?php if( has_post_thumbnail() ) : ?>
 		<div class="featured-image">
 			<?php the_post_thumbnail( 'large' ); ?>
+			<div class="fe-header">
+				<div class="inner">
+					<div class="header">
+						<h2>Some title</h2>						
+					</div>
+				</div>
+			</div>
 		</div>
 	<?php endif; ?>
 	<div class="container">
