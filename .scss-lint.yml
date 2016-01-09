@@ -10,9 +10,7 @@ linters:
     enabled: false
 
   Indentation:
-    severity: warning
-    width: 1
-    character: tab
+    enabled: false
 
   SingleLinePerSelector:
     enabled: false
