@@ -137,7 +137,6 @@ function kanec_get_post_thumbnail_url() {
 	global $post;
 	$attach_id = get_post_thumbnail_id( get_the_ID() );
 	$src = wp_get_attachment_image_src( $attach_id, 'large' );
-	error_log( print_r( $src, true ) );
 	return $src[0];
 }
 
