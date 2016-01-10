@@ -1,4 +1,4 @@
-// Basic Gulp tasks for teting Bourbon Neat stuff
+'use strict';
 
 var gulp         = require( 'gulp' );
 var browserSync  = require( 'browser-sync' ).create();
@@ -38,16 +38,12 @@ var runTimestamp = Math.round(Date.now()/1000);
 gulp.task('icons', function(){
 	return gulp.src(['assets/icons/*.svg'])
 		.pipe(iconfont({
-			fontName: 'kanec-icons', // required 
-			appendUnicode: true, // recommended option 
-			formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available 
-			timestamp: runTimestamp, // recommended to get consistent builds when watching files 
+			fontName: 'kanec-icons',
+			appendUnicode: true,
+			formats: ['ttf', 'eot', 'woff'],
+			timestamp: runTimestamp,
 			descent: 240 // Fix baseline
 		}))
-			.on('glyphs', function(glyphs, options) {
-				// CSS templating, e.g. 
-				console.log(glyphs, options);
-			})
 		.pipe( gulp.dest('dist') );
 });
 
