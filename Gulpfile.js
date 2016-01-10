@@ -3,10 +3,11 @@
 var gulp         = require( 'gulp' );
 var watchify     = require( 'watchify' );
 var browserify   = require( 'browserify' );
-var source       = require('vinyl-source-stream');
-var buffer       = require('vinyl-buffer');
-var gutil        = require('gulp-util');
-var assign       = require('lodash.assign');
+var coffeeify    = require( 'coffeeify' );
+var source       = require( 'vinyl-source-stream' );
+var buffer       = require( 'vinyl-buffer' );
+var gutil        = require( 'gulp-util' );
+var assign       = require( 'lodash.assign' );
 var browserSync  = require( 'browser-sync' ).create();
 var cache        = require( 'gulp-cached' );
 var iconfont     = require( 'gulp-iconfont' );
@@ -66,14 +67,14 @@ gulp.task('icons', function() {
 
 // add custom browserify options here
 var customOpts = {
-  entries: ['./assets/js/main.js'],
+  entries: ['./assets/js/main.coffee'],
   debug: true
 };
 var opts = assign({}, watchify.args, customOpts);
 var b = watchify(browserify(opts)); 
 
 // add transformations here
-// i.e. b.transform(coffeeify);
+b.transform(coffeeify);
 
 gulp.task('js', bundle); // so you can run `gulp js` to build the file
 b.on('update', bundle); // on any dep update, runs the bundler
