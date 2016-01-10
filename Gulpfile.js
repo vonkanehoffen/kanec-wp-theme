@@ -55,35 +55,29 @@ gulp.task('icons', function() {
 
 // JS Bundling
 
-var customOpts = {
-  entries: ['./assets/js/main.js'],
-  debug: true
-};
-var opts = assign({}, watchify.args, customOpts);
-var b = watchify(browserify(opts)); 
-
 gulp.task('js', function() {
-	return b.bundle()
+	return browserify('assets/js/main.js').bundle()
     // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
     .pipe(source('main.js'))
-    // optional, remove if you don't need to buffer file contents
     .pipe(buffer())
-    // optional, remove if you dont want sourcemaps
     .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
        // Add transformation tasks to the pipeline here.
     .pipe(sourcemaps.write('./')) // writes .map file
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .pipe( browserSync.stream() );
 });
 
 // Main build task
-gulp.task( 'build', [ 'sass' ] );
+gulp.task( 'build', [ 'sass', 'js' ] );
 
 // Watch files and run BrowserSync
 gulp.task( 'watch', ['build'], function() {
 	browserSync.init({
 		proxy: 'http://kanec.loc',
 	});
-	gulp.watch( 'assets/styles/**/*.scss', ['build', 'scss-lint'] );
+	gulp.watch( 'assets/styles/**/*.scss', ['sass', 'scss-lint'] );
+	gulp.watch( 'assets/js/**/*.js', ['js'] );
+	
 	gulp.watch( '**/*.php' ).on( 'change', browserSync.reload );
 });
