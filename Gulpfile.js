@@ -1,6 +1,12 @@
 'use strict';
 
 var gulp         = require( 'gulp' );
+var watchify     = require( 'watchify' );
+var browserify   = require( 'browserify' );
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var gutil = require('gulp-util');
+var assign = require('lodash.assign');
 var browserSync  = require( 'browser-sync' ).create();
 var cache        = require( 'gulp-cached' );
 var iconfont     = require( 'gulp-iconfont' );
@@ -35,7 +41,7 @@ gulp.task( 'scss-lint', function() {
 
 // Icon Font
 var runTimestamp = Math.round(Date.now()/1000);
-gulp.task('icons', function(){
+gulp.task('icons', function() {
 	return gulp.src(['assets/icons/*.svg'])
 		.pipe(iconfont({
 			fontName: 'kanec-icons',
@@ -45,6 +51,29 @@ gulp.task('icons', function(){
 			descent: 240 // Fix baseline
 		}))
 		.pipe( gulp.dest('dist') );
+});
+
+// JS Bundling
+
+var customOpts = {
+  entries: ['./assets/js/main.js'],
+  debug: true
+};
+var opts = assign({}, watchify.args, customOpts);
+var b = watchify(browserify(opts)); 
+
+gulp.task('js', function() {
+	return b.bundle()
+    // log errors if they happen
+    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .pipe(source('main.js'))
+    // optional, remove if you don't need to buffer file contents
+    .pipe(buffer())
+    // optional, remove if you dont want sourcemaps
+    .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
+       // Add transformation tasks to the pipeline here.
+    .pipe(sourcemaps.write('./')) // writes .map file
+    .pipe(gulp.dest('./dist'));
 });
 
 // Main build task
