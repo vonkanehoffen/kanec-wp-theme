@@ -122,9 +122,21 @@ add_action( 'widgets_init', 'kanec_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kanec_scripts() {
+
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_register_script(
+      'jquery',
+      'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js',
+      [],
+      null,
+      true
+    );
+    add_filter('script_loader_src', 'jquery_local_fallback', 10, 2);
+	}
 	wp_enqueue_style( 'kanec-style', get_template_directory_uri() . '/dist/main.css', [], false, 'all' );
 
-	wp_enqueue_script( 'kanec-main', get_template_directory_uri() . '/dist/main.js', array(), '20120206', true );
+	wp_enqueue_script( 'kanec-main', get_template_directory_uri() . '/dist/main.js', ['jquery'], '20120206', true );
 
 	// wp_enqueue_script( 'kanec-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -133,6 +145,23 @@ function kanec_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'kanec_scripts' );
+
+/**
+ * Output the local fallback immediately after jQuery's <script>
+ *
+ * @link http://wordpress.stackexchange.com/a/12450
+ */
+function jquery_local_fallback($src, $handle = null) {
+  static $add_jquery_fallback = false;
+  if ($add_jquery_fallback) {
+    echo '<script>window.jQuery || document.write(\'<script src="' . $add_jquery_fallback .'"><\/script>\')</script>' . "\n";
+    $add_jquery_fallback = false;
+  }
+  if ($handle === 'jquery') {
+    $add_jquery_fallback = apply_filters('script_loader_src', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.min.js', 'jquery-fallback');
+  }
+  return $src;
+}
 
 /**
  * Implement the Custom Header feature.

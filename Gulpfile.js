@@ -4,6 +4,7 @@ var gulp         = require( 'gulp' );
 var watchify     = require( 'watchify' );
 var browserify   = require( 'browserify' );
 var coffeeify    = require( 'coffeeify' );
+var browserifyShim   = require( 'browserify-shim' );
 var source       = require( 'vinyl-source-stream' );
 var buffer       = require( 'vinyl-buffer' );
 var gutil        = require( 'gulp-util' );
@@ -75,6 +76,7 @@ var b = watchify(browserify(opts));
 
 // add transformations here
 b.transform(coffeeify);
+b.transform(browserifyShim);
 
 gulp.task('js', bundle); // so you can run `gulp js` to build the file
 b.on('update', bundle); // on any dep update, runs the bundler

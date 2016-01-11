@@ -20,7 +20,9 @@
     "test",
     "tests"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "2.1.4"
+  },
   "devDependencies": {
     "modular-scale": "~2.1.1",
     "compass-breakpoint": "breakpoint-sass#~2.6.1",

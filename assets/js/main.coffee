@@ -1,4 +1,4 @@
-$ = require 'jquery'
+$ = require 'jQuery'
 require './_navigation.js'
 require './_skip-link-focus-fix.js'
 
