@@ -5,14 +5,8 @@ require './_skip-link-focus-fix.js'
 
 	# Featured image expansion
 	addExpander = ->
-		$el = $(this)
-		containerHeight = $el.innerHeight()
-		imgHeight = $('.wp-post-image', this).height()
-		
-		if imgHeight > containerHeight
-			$el.append('<div class="expand" />')
-			$el.data 'containerHeight', containerHeight
-			$el.data 'imgHeight', imgHeight
+		if $('.wp-post-image', this).height() > $(this).innerHeight()
+			$(this).append('<div class="expand" />')
 
 	expand = ->
 		$el = $(this).parent()
