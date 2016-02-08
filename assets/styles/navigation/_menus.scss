@@ -1,11 +1,10 @@
 // Logo ---------------------------------------------------
 
 .site-header {
-	position: fixed;
 	top: 0;
 	width: 100%;
+	background: $color-primary;
 	&.toggled {
-		background: $color-primary;
 	}
 	.admin-bar & {
 		top: 32px; // WP Admin bar / logged in users
