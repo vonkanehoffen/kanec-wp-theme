@@ -37,7 +37,7 @@ get_header(); ?>
 						<h3>...and that's why I'm passionate about coding standards as well as harmonious colour palettes.</h3>
 						<p>When I was growing up, I got taught how to program a computer by one parent and how to draw by the other. These two disciplines have stayed with me throughout my professional career. </p>
 
-						<p>Starting as a Graphic Designer, I’ve become ever more interested in the role systems and technology have in creating beautiful visuals. Whether it’s the Golden Ratio or the latest streaming build system, I’m passionate about using it to create things of beauty. </p>
+						<p>Starting as a Graphic Designer, I’ve become ever more interested in the role systems and technology have in creating beautiful web experiences. Whether it’s the Golden Ratio or the latest streaming build system, I’m passionate about using it to create things of beauty. </p>
 					</div>
 				</div>
 			</section>
