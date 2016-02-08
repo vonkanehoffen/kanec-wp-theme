@@ -16,16 +16,24 @@
 		padding: 0 gutter();
 	}
 	h1 {
-		font-size: ms(2);
+		font-size: ms(1);
 		font-weight: normal;
 		span {
 			font-weight: 700;
 		}
 	}
 	h2 {
-		font-size: ms(4);
+		font-size: ms(3);
 		font-weight: 100;
 		margin-top: 0;
+	}
+	@include susy-breakpoint($bp-desktop) {
+		h1 {
+			font-size: ms(2);
+		}
+		h2 {
+			font-size: ms(4);
+		}
 	}
 
 	$pad: 20px;
@@ -132,8 +140,6 @@
 	}
 
 }
-
-
 
 .portfolio-excerpt {
 	display: flex;
