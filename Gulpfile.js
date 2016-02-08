@@ -116,3 +116,9 @@ gulp.task( 'watch', ['build'], function() {
 	
 	gulp.watch( '**/*.php' ).on( 'change', browserSync.reload );
 });
+
+///////////////////////////////////////////////////////////
+// Default Task
+///////////////////////////////////////////////////////////
+
+gulp.task( 'default', [ 'build' ] );
