@@ -1,3 +1,6 @@
+// Clearings
+// --------------------------------------------------------
+
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -19,5 +22,25 @@
 .site-header:after,
 .site-content:after,
 .site-footer:after {
+	clear: both;
+}
+
+// Alignments 
+// --------------------------------------------------------
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	@include center-block;
 	clear: both;
 }
