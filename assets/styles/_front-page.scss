@@ -12,9 +12,6 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
-	.container {
-		padding: 0 gutter();
-	}
 	h1 {
 		font-size: ms(1);
 		font-weight: normal;
@@ -110,6 +107,7 @@
 
 .post-thumbs {
 	@include container;
+	padding: 0 1em;
 	header {
 		@include span(12);
 		h2 {

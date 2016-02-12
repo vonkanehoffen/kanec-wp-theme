@@ -1,5 +1,6 @@
 .container {
 	@include container;
+	padding: 0 1em;
 	.entry-header {
 		@include span(12);
 	}
