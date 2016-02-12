@@ -1,25 +1,3 @@
-.container {
-	@include container;
-	.entry-header {
-		@include span(12);
-	}
-	.entry-content {
-		@include span(12);
-		@include susy-breakpoint($bp-desktop) {
-			@include span(9 last);
-			.page & {
-				@include span(9 first);
-			}
-		}
-	}
-	.entry-meta {
-		@include span(12);
-		@include susy-breakpoint($bp-desktop) {
-			@include span(3 first);
-		}
-	}
-}
-
 .entry-title a {
 	text-decoration: none;
 	color: inherit;
