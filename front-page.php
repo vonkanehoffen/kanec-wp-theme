@@ -34,10 +34,9 @@ get_header(); ?>
 						<img src="<?= get_template_directory_uri() ?>/assets/images/beauty.svg" alt="Beauty comes from the inside!">
 					</div>
 					<div class="statement">
-						<h3>...and that's why I'm passionate about coding standards as well as harmonious colour palettes.</h3>
-						<p>When I was growing up, I got taught how to program a computer by one parent and how to draw by the other. These two disciplines have stayed with me throughout my professional career. </p>
-
-						<p>Starting as a Graphic Designer, I’ve become ever more interested in the role systems and technology have in creating beautiful web experiences. Whether it’s the Golden Ratio or the latest streaming build system, I’m passionate about using it to create things of beauty. </p>
+						<h3>I have a background in art and graphic design, along with many years of experience on the web.</h3>
+						<p>I've worked on projects encompassing everything from logo and print design, through video post production, all the way to React JS, Wordpress plugin development, Linux server admin, Ruby on Rails and Node.</p>
+						<p>Skills not mastered: Copywriting and personal statements ;-)</p>
 					</div>
 				</div>
 			</section>
