@@ -123,3 +123,19 @@
 .archive .format-aside .entry-title {
 	display: none;
 }
+
+// Crayon Syntax mods
+
+.crayon-nums {
+	display: none;
+}
+
+.crayon-syntax {
+	.crayon-table {
+		padding: 6px !important;
+	}
+	.crayon-line {
+		padding: 3px 5px !important;
+	}
+}
+
