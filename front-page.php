@@ -20,7 +20,7 @@ get_header(); ?>
 				<div class="container">
 					<h1><span>Kane Clover</span> / Manchester, UK</h1>
 					<h2><?= get_bloginfo( 'description', 'display' ); ?></h2>
-					<a href="#main" class="enter">
+					<a href="<?= get_permalink( get_option( 'page_for_posts' ) ); ?>" class="enter">
 						<i class="icon icon-arrow-right"></i>
 					</a>
 				</div>
