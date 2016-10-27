@@ -34,7 +34,7 @@ get_header(); ?>
 						<img src="<?= get_template_directory_uri() ?>/assets/images/beauty.svg" alt="Beauty comes from the inside!">
 					</div>
 					<div class="statement">
-						<h3>I have a background in art and graphic design, along with many years of experience on the web.</h3>
+						<h3>I have a background in Graphic Design and art, along with many years experience building the web.</h3>
 						<p>I've worked on projects encompassing everything from logo and print design, through video post production, all the way to React JS, Wordpress plugin development, Linux server admin, Ruby on Rails and Node.</p>
 						<p>Skills not mastered: Copywriting and personal statements ;-)</p>
 					</div>
